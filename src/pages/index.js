@@ -58,7 +58,7 @@ function Feature({imageUrl, title, description}) {
 function Home() {
 
   // redirecting to docs
-  return <Redirect to={useBaseUrl('/doc1')} />;
+  return <Redirect to={useBaseUrl('/about')} />;
 
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
