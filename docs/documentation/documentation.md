@@ -90,6 +90,33 @@ sidebar_label: Documentation Tools
       | +--Angular
     ```
 
+- Searchbar
+  - [docusaurus-lunr-search](https://github.com/lelouch77/docusaurus-lunr-search)
+  
+  ```bash title="project_folder"
+  npm i docusaurus-lunr-search  --save
+  npm run swizzle docusaurus-lunr-search SearchBar
+
+  ```
+  
+  ```js title="docusaurus.config.js"
+    module.exports = {
+    // ...
+    plugins: [
+      'docusaurus-lunr-search'
+    ]
+  }
+  ```
+  
+  ```bash title="project_folder"
+  npm run build
+  npx http-server ./build
+
+  ```
+:::note
+Docusaurus search information can only be generated from a production build. Local development is currently not supported.
+:::
+
 ### Deployment
 
 #### Zeit
