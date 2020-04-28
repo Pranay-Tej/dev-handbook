@@ -22,6 +22,13 @@ Toggle Dark theme using the button in top-right corner.
 #### On Mobile
 Toggle Dark theme in the left side bar which can be accessed using the button in top-left corner.
 
-## [GitHub Repository](https://github.com/Pranay-Tej/dev-handbook)
+## View Documentation on [GitHub](https://github.com/Pranay-Tej/dev-handbook)
 
-> Built using [Docusaurus 2](https://v2.docusaurus.io/)
+Built using [Docusaurus 2](https://v2.docusaurus.io/). Deployed on [Zeit (Vercel)](https://vercel.com/).
+
+[Guide](documentation/documentation)
+
+## My Profiles
+#### [GitHub](https://github.com/Pranay-Tej)
+#### [GitLab](https://gitlab.com/pranay_teja)
+

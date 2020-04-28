@@ -10,6 +10,16 @@ module.exports = {
     },
     {
         type: "category",
+        label: "Online Resources",
+        items: [
+            {
+                type: "doc",
+                id: "resources/resources",
+            },
+        ],
+    },
+    {
+        type: "category",
         label: "Languages",
         items: [
             {
@@ -30,11 +40,31 @@ module.exports = {
     },
     {
         type: "category",
+        label: "Data Structures",
+        items: ["ds/ds"],
+    },
+    {
+        type: "category",
+        label: "Algorithms by Topic",
+        items: ["algorithms/algorithms"],
+    },
+    {
+        type: "category",
         label: "Frontend",
         items: [
             {
                 type: "doc",
                 id: "frontend/frontend",
+            },
+            {
+                type: "category",
+                label: "HTML",
+                items: ["frontend/html/html"]
+            },
+            {
+                type: "category",
+                label: "CSS",
+                items: ["frontend/css/css"]
             },
             {
                 type: "category",
@@ -48,7 +78,41 @@ module.exports = {
             },
         ],
     },
-    
+    {
+        type: "category",
+        label: "Backend",
+        items: [
+            {
+                type: "doc",
+                id: "backend/backend",
+            },
+            {
+                type: "category",
+                label: "Spring Boot",
+                items: ["backend/springboot/springboot"]
+            },
+        ],
+    },
+    {
+        type: "category",
+        label: "Linux",
+        items: [
+            {
+                type: "doc",
+                id: "linux/linux",
+            },
+        ],
+    },
+    {
+        type: "category",
+        label: "Git",
+        items: [
+            {
+                type: "doc",
+                id: "git/git",
+            },
+        ],
+    },
     {
         type: "category",
         label: "Devops",
@@ -59,15 +123,31 @@ module.exports = {
             },
             {
                 type: "category",
-                label: "Git",
-                items: ["devops/git/git"],
-            },
-            {
-                type: "category",
                 label: "Docker",
                 items: ["devops/docker/docker"],
             },
         ],
     },
+    {
+        type: "category",
+        label: "Deployment",
+        items: [
+            {
+                type: "doc",
+                id: "deployment/heroku",
+            },
+        ],
+    },
+    {
+        type: "category",
+        label: "Documentation Tools",
+        items: [
+            {
+                type: "doc",
+                id: "documentation/documentation",
+            },
+        ],
+    },
+    
 ],
 };

@@ -1,7 +1,7 @@
 module.exports = {
   title: 'dev-handbook',
   tagline: 'Handbook for developers',
-  url: 'https://dev-handbook.netlify.app',
+  url: 'https://dev-handbook.now.sh',
   baseUrl: '/',
   favicon: 'img/code-slash.ico',
   organizationName: 'Pranay-Tej', // Usually your GitHub org/user name.

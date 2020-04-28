@@ -4,20 +4,38 @@ title: Index
 sidebar_label: Index
 ---
 
+## Online Resources
+
 ## Languages
 
-### CPP
+-   CPP
+-   Java
+-   Python
 
-### Java
+## Data Structures
 
-### Python
+## Algorithms
 
 ## [Frontend](frontend/frontend)
 
-### [Angular](frontend/angular/angular)
+-   [Angular](frontend/angular/angular)
 
-### React
+-   React
 
 ## Backend
 
+-   Spring Boot
+
+## Linux
+
+## Git
+
 ## DevOps
+
+-   Docker
+
+## Deployment
+
+-   Heroku
+
+## Devops
