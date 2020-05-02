@@ -140,6 +140,17 @@ module.exports = {
     },
     {
         type: "category",
+        label: "GameDev",
+        items: [
+            {
+                type: "category",
+                label: "Unity",
+                items: ["gamedev/unity/unity"],
+            },
+        ],
+    },
+    {
+        type: "category",
         label: "Documentation Tools",
         items: [
             {

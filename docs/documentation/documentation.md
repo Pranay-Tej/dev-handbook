@@ -117,6 +117,20 @@ sidebar_label: Documentation Tools
 Docusaurus search information can only be generated from a production build. Local development is currently not supported.
 :::
 
+### Syntax Highlighting for Languages
+- [Source](https://v2.docusaurus.io/docs/markdown-features/#syntax-highlighting)
+  ```js title="docusaurus.config.js"
+  module.exports = {
+  // ...
+  themeConfig: {
+      prism: {
+        additionalLanguages: ['csharp'],
+      },
+      // ...
+    },
+  };
+  ```
+
 ### Deployment
 
 #### Zeit
