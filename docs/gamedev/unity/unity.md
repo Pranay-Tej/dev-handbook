@@ -6,14 +6,27 @@ sidebar_label: Unity
 
 ## Courses
 
+### Unity
+
+- [MicroGame Platformer](https://learn.unity.com/project/2d-platformer-template)
+- [Roll A Ball](https://learn.unity.com/project/roll-a-ball-tutorial)
+
+### Brackeys
+
+- [Make A Game 1-12](https://www.youtube.com/playlist?list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6)
+- [2D](https://www.youtube.com/playlist?list=PLPV2KyIb3jR6TFcFuzI2bB7TMNIIBpKMQ)
+
 - - -
 
 ## Topics
 
 ### Setup
 
-dotNET Core SDK
-Visual Studio Code
+Windows
+
+- dotNET Core SDK
+
+Visual Studio Code Setup
 
 - C#
 - Debugger for Unity
@@ -23,8 +36,8 @@ Visual Studio Code
 
 ### Git
 
--   <https://github.com/github-for-unity/Unity/blob/master/docs/using/quick-guide.md>
--   <https://medium.com/@j0hnm4r5/git-with-unity-92ca7854ea3d>
+- <https://github.com/github-for-unity/Unity/blob/master/docs/using/quick-guide.md>
+- <https://medium.com/@j0hnm4r5/git-with-unity-92ca7854ea3d>
 - Window Asset Store
 - GitHub for Unity
 - Window GitHub
@@ -43,6 +56,12 @@ Visual Studio Code
   - Create Layer
   - Asssign objects to that layer
   - Lock layer for player selection
+- Coordinates
+  - The colored arrows represent the positive direction of each axis, with the grey arrow opposite representing the negative direction
+- Naming Convention
+  - All variables start with a lowercase letter. Ex: horizontalSpeed
+  - non-public member variables. Ex: m_Movement;
+  - m_ part of the non-public member variables comes from them being 'member' variables
 - Physics Calculation Time
   - Edit ProjectSettings Time FixedTimeStamp 0.01
 - Focus
@@ -50,6 +69,8 @@ Visual Studio Code
   - DoubleTap F to lock onto the object (Shift F)
 - Delay to a function
   - Invoke(string_function_name, delay)
+- ```transform.RotateAround()```
+  - use this to add spinner animations
 - While editing a value using mouse in Inspector
   - use AltClick for precise increments
 - **Avoid using GameObject.Find or FindWithTag**
@@ -80,6 +101,7 @@ Visual Studio Code
     [Range(.1f, 2f)]
     public float jump_height = 1f
     ```
+
   - results in a slider in UnityInspector
 - Save changes done in play mode
   - SelectComponent Inspector RightClick CopyValues
@@ -95,6 +117,7 @@ Visual Studio Code
     [Header("Properties")]
     public float weight;
     ```
+
   - Creates in UnityEditor
 - Region
 
@@ -104,6 +127,7 @@ Visual Studio Code
     public float weight;
     #endregion
     ```
+
   - Seperate secions of code as collapsible regions
 - Tooltip
 
@@ -111,6 +135,7 @@ Visual Studio Code
     [Tooltip("Player health")]
     public float health;
     ```
+
   - Shows tooltips in UnityEditor
 - HideInInspector
 
@@ -118,6 +143,7 @@ Visual Studio Code
     [HideInInspector]
     public float example;
     ```
+
   - Hides in UnityEditor
 - SerializeField
 
@@ -125,15 +151,16 @@ Visual Studio Code
     [SerializeField]
     private int health = 20;
     ```
+
   - Shows variable in UnityEditor
 
 ### Assets
 
-Anima 2D
+- Anima 2D
 
-### Terminology
+## Terminology
 
-Materials
+### Materials
 
 - Surface Material
 - ProjectSettings Create Material
@@ -141,15 +168,15 @@ PhysicsMaterial
 - Change Friction
 - ProjectSettings Create PhysicsMaterial
 
-Collisions
+### Collisions
 
-Collision
+#### Collision
 
 - Add ColliderComponent
 - OnCollisionEnter(Collision)
 - OnCollisionExit
 
-Trigger
+#### Trigger
 
 - Use for triggering events
 - Physical collision is not simulated
@@ -184,15 +211,15 @@ Trigger
 - TIP: Disable Meshrenderer to make invisible triggers
 - TIP: Use Icon on top left of Inspector to view invisible objects as icons
 
-Lights
+### Lights
 
-Fog
+#### Fog
 
 - Window Lights
 
-UI
+### UI
 
-Brackey
+#### Brackeys
 
 - Create UI Element
 - Canvas Object is necessary for UI to work
@@ -238,14 +265,21 @@ Brackey
 - Add Panel to Button OnClick Field
 - Select Function from The Script
 - NOTE: Order of panels matters in Canvas
+- TODO: use of static methods in UI Elements??
 
-GameLogic
+### GameLogic
 
-GameManager
+#### GameManager
 
 - Create Empty object and use it to manage game logic
 
-Tags
+### Tags
+
+Define
+
+- Select GameObject
+- In Inspector window
+- Use Tag dropdown to assign tags
 
 Access
 
@@ -254,51 +288,57 @@ Access
 - OnCollisionEnter
   - collision.collider.tag == string
 
-Layers
+### Layers
 
-Build Index
+### Scene Management
+
+#### Build Index
 
 - File Build Settings
 - Use for StartMenu Levels and EndCredits
 - RestartLevel
+- ```DontDestroyOnLoad()``` function which will maintain an object reference across scene changes
 
-```cs
-SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-```
+  ```cs
+  SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+  ```
 
 - NextLevel
 
-```cs
-SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-```
+  ```cs
+  SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+  ```
 
 - NOTE: If there's no next level in build index editor will throw error
 - Build a Credits (End) Level with Quit button
 
-Player Input
+### Player Input
 
 - Axes
 - Press
+  - ```GetKeyDown``` detects when a key has just been pressed
+  - ```GetKeyUp``` detects when a key has just been released
 - Press and Hold
+  - ```GetKey``` detects a keypress that is then held
 
-```cs
-if (Input.GetButtonDown("Crouch"))
-        {
-            crouch = true;
-        }
-        else if (Input.GetButtonUp("Crouch"))
-        {
-            crouch = false;
-        }
-```
+  ```cs
+  if (Input.GetButtonDown("Crouch"))
+  {
+      crouch = true;
+  }
+  else if (Input.GetButtonUp("Crouch"))
+  {
+      crouch = false;
+  }
+  ```
 
 - Edit ProjectSettings Input
 
-Prefabs
+### Prefabs
 
-Brackey
+#### Brackeys
 
-Intro
+**Intro**
 
 - Drag from Hierarchy to Project to create a prefab
 - Open PrefabMode my clicking right arrow in Heirarchy or DoubleClick prefab in ProjectTab
@@ -317,28 +357,28 @@ Prefab Variants
   - SwordPrefab
   - Variants: IceSword, FireSword
   - Changes to SwordPrefab will affect other variants
-
+- in Unity, models work like read-only Prefabs.  They’re blueprints for creating instances of that model, but the blueprint itself cannot be changed.  
 SpriteShapes
 
-Lights
+### Lights
 
-Pause Menu
+### Pause Menu
 
 - Use Time.timescale
 
-```cs
-public void TogglePauseMenu(){
-        if(isPaused){
-            // if the game is currently paused and user presses resume/esc
-            Time.timeScale = 1;
-            pauseMenuUI.SetActive(false);
-            isPaused = false;
-        }else{
-            Time.timeScale = 0;
-            pauseMenuUI.SetActive(true);
-            isPaused = true;
-        }
-    }
-```
+  ```cs
+  public void TogglePauseMenu(){
+          if(isPaused){
+              // if the game is currently paused and user presses resume/esc
+              Time.timeScale = 1;
+              pauseMenuUI.SetActive(false);
+              isPaused = false;
+          }else{
+              Time.timeScale = 0;
+              pauseMenuUI.SetActive(true);
+              isPaused = true;
+          }
+      }
+  ```
 
 - TIP: Use Time.timescale for time manipulations (slow mo)

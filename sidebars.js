@@ -145,7 +145,12 @@ module.exports = {
             {
                 type: "category",
                 label: "Unity",
-                items: ["gamedev/unity/unity"],
+                items: [
+                    "gamedev/unity/unity",
+                    "gamedev/unity/unity2d",
+                    "gamedev/unity/unity-tutorial-notes",
+
+                ],
             },
         ],
     },
