@@ -1,6 +1,9 @@
 # Dependencies
 /node_modules
 
+# Editor
+.vscode/
+
 # Production
 /build
 
