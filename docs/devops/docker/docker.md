@@ -1,5 +1,5 @@
 ---
 id: docker
-title: Docker-Index
-sidebar_label: Docker-Index
+title: Docker
+sidebar_label: Docker
 ---

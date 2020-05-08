@@ -6,20 +6,20 @@ sidebar_label: Documentation Tools
 
 ## Markdown
 
--   [Markdown Syntax](https://daringfireball.net/projects/markdown/syntax)
--   [Markdown Guide](https://markdown-guide.readthedocs.io/en/latest/index.html)
+- [Markdown Syntax](https://daringfireball.net/projects/markdown/syntax)
+- [Markdown Guide](https://markdown-guide.readthedocs.io/en/latest/index.html)
 
 ## Docusaurus
 
--   initialize docusaurus project
+- initialize docusaurus project
 
     ```bash title="terminal"
     npx @docusaurus/init@next init dev-handbook classic
 
     ```
 
--   delete blog/ folder
--   enable "docs-only" mode
+- delete blog/ folder
+- enable "docs-only" mode
 
     ```json title="docusaurus.config"
     docs: {
@@ -35,7 +35,7 @@ sidebar_label: Documentation Tools
     }
     ```
 
--   add site details
+- add site details
 
     ```js title="docusaurus.config.js"
     module.exports={
@@ -57,7 +57,8 @@ sidebar_label: Documentation Tools
     }
     ```
 
--   Sidebar Configuration
+- Sidebar Configuration
+
     ```js sidebar.js
     {
       type: "category",
@@ -80,9 +81,10 @@ sidebar_label: Documentation Tools
       ],
       }
     ```
+
     ```md title="Resulting Sidebar"
     Frontend
-      | 
+      |
       +--Frontend
       +--React
       | +--React
@@ -113,12 +115,15 @@ sidebar_label: Documentation Tools
   npx http-server ./build
 
   ```
+
 :::note
 Docusaurus search information can only be generated from a production build. Local development is currently not supported.
 :::
 
 ### Syntax Highlighting for Languages
+
 - [Source](https://v2.docusaurus.io/docs/markdown-features/#syntax-highlighting)
+
   ```js title="docusaurus.config.js"
   module.exports = {
   // ...
@@ -135,8 +140,8 @@ Docusaurus search information can only be generated from a production build. Loc
 
 #### Zeit
 
--   Create account
--   Connect Git repository
+- Create account
+- Connect Git repository
 
 #### Netlify
 
@@ -147,5 +152,5 @@ Docusaurus search information can only be generated from a production build. Loc
   };
   ```
 
--   build command: `npm run build`
--   build directory: `build`
+- build command: `npm run build`
+- build directory: `build`

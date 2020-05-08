@@ -1,10 +1,11 @@
 ---
 id: react
-title: React-Index
-sidebar_label: React-Index
+title: React
+sidebar_label: React
 ---
 
 ## Courses
+
 - [Scrimba](https://scrimba.com/course/glearnreact)
 - [React Hooks](https://scrimba.com/course/greacthooks)
 - [Tic Tac Toe using React Hooks](https://scrimba.com/course/greactgame)
@@ -15,5 +16,3 @@ sidebar_label: React-Index
 ## Index
 
 ### Routing
-
-

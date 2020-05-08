@@ -1,7 +1,7 @@
 ---
 id: c++
-title: C++-Index
-sidebar_label: C++-Index
+title: C++
+sidebar_label: C++
 ---
 
 ## Courses

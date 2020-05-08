@@ -4,8 +4,8 @@ title: Online Resources
 sidebar_label: Online Resources
 ---
 
-## Contents
-- [Contents](#contents)
+## Contents <!-- omit in toc -->
+
 - [Websites](#websites)
 - [Books](#books)
 - [Languages and Technologies](#languages-and-technologies)
@@ -90,7 +90,9 @@ sidebar_label: Online Resources
 - - -
 
 ## Coding Platforms
+
 Practice, Competitive Programming ```CP```
+
 - [GeeksForGeeks](https://www.geeksforgeeks.org/)
 - [CodeSignal](https://app.codesignal.com/interview-practice)
 - [HackerRank](https://www.hackerrank.com/)
@@ -107,8 +109,8 @@ Practice, Competitive Programming ```CP```
 ## Tools
 
 - CodeHosting
-    - [GitHub](https://github.com/)
-    - [GitLab](https://gitlab.com/)
+  - [GitHub](https://github.com/)
+  - [GitLab](https://gitlab.com/)
 - [Cacher.io](https://www.cacher.io/)
     > Save code snippets ( [Webapp](https://app.cacher.io/), [Desktop App](https://www.cacher.io/))
 - [GFG Online IDE](https://ide.geeksforgeeks.org/)

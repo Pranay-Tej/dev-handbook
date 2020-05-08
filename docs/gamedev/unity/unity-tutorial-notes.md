@@ -141,7 +141,7 @@ NOTE: If you add a velocity to your body, you're ignoring any mass that the bo
             // Vector3 theScale = transform.localScale;
             // theScale.x *= -1;
             // transform.localScale = theScale;
-            
+
             //FIX:
             // Rotate player
             transform.Rotate(0f, 180f, 0f);
@@ -223,7 +223,6 @@ Lerp?
 - Drag Player Into Follow field of Cinemachine VirtualCamera InspectorWindow
 - Damping Smoothing
 - Deadzones area in which camera will allow player movement without following
-
 
 ---
 
@@ -323,6 +322,138 @@ void Start()
     }
     ```
 
+### SpriteTiling Instead of Streching
+
+- Tile (Draw Multiple) Sprites instead of Stretching a tile on resizing
+- Transform Scale 1 1 1
+- SpriteRenderer Component DrawMode Tiled
+- TileMode Adaptive
+- Select Tile in ProjectWindow MeshType FullRect
+- BoxCollide2D Enable AutoTiling to follow Sprite size
+- **NOTE:** this only works with ```RectTool``` . NOT Scale Tool. Scale changes scale of the object not the tiling size.
+
+### Animation
+
+- The number in the top right corner of Controls shows the selected keyframe number
+- Use record mode and Make changes for selected keyframe
+- OR
+- AddProperty in the Animation window
+- Select keyframe and change property for selected keyframe
+
+### Animator
+
+- Layers are useful for 3D animations because they allow you to use animations on different parts of the character.
+- Parameters are used by our scripts to give information to the Controller.
+- Animation State Machine is a graph of all the states of your animations and how they transition from one to another.
+
+#### Blend Trees
+
+- RightClick in AnimationStateMachine CreateState FromNewBlendTree
+- DoubleClick BlendTree
+- Click on BlendTreeNode to open it in Inspector
+- BlendType 2DSimpleDirectional
+- Add Parameters in the AnimatorWindowLeftPane to work with
+- SelectBlendTree Inspector ```+``` AddMotionField
+- Drag AnimationClips into MotionField and set Variables accordingly
+
+### Look Direction
+
+#### Using Matf instead of ```==``` for equality checks
+
+- ```Mathf.Approximately(move.x, 0.0f)```
+- Use ```Mathf.Approximately``` instead of ```==``` because the way computers store float numbers means there is a tiny loss in precision.
+- So you should never test for perfect equality because an operation that should end up giving 0.0f could instead give something like 0.0000000001f instead. Approximately takes that imprecision into account and will return true if the number can be considered equal minus that imprecision.
+
+#### Normalizing Vectors
+
+- The length of a Vector defines how long that arrow is. So, for example, a Vector2 equal to (0,-2) has a length of 2 and points down. If we normalize that Vector, it will become equal to (0,-1), so still pointing down but of length 1.
+- In general, you will normalize vectors that store direction because length is not important, only the direction is.
+- **NOTE:** You should never normalize a vector storing a position because as it changes x and y, it changes the position!
+
+### Instantiate
+
+```cs
+GameObject exampleObject = Instantiate(GameObject, Vector2, Quaternion.identity);
+```
+
+#### Quaternions
+
+- Quaternions are mathematical operators that can express rotation.
+- Quaternion.identity means “no rotation”.
+
+#### Awake
+
+Rigidbody2d variable is empty (contains null), despite us getting the Rigidbody in Start.
+
+That’s because Unity doesn’t run Start when you create the object, but on the next frame. So when you call Launch on your projectile, just Instantiate and don’t call Start, so your Rigidbody2d is still empty. To fix that, rename the void Start() function in the Projectile script to void Awake().
+
+Contrary to Start, Awake is called immediately when the object is created (when Instantiate is called), so Rigidbody2d is properly initialized before calling Launch.
+
+### Layers
+
+Layers allow you to group GameObjects together so they can be filtered. Your aim is to make a Character layer to put your Ruby GameObject in, and a Projectile layer to put all your projectiles in.
+
+Then you can tell your Physics System that the Character and Projectile layers can’t collide, so it will ignore all collisions between objects in those layers.
+
+#### Layer Collision Matrix
+
+Then open Edit > Project Settings > Physics 2D and look to the Layer Collision Matrix the part at the bottom, to see which layers collide with which
+
+By default, all are ticked, so all layers collide with every other layer, but you want to uncheck the intersection between the Character row and Projectile column, so those two layers don’t collide anymore.
+
+### RigidBody Simulation
+
+```cs
+rigidbody2D.simulated = false;
+```
+
+This removes the Rigidbody from the Physics System simulation, so it won’t be taken into account by the system for collision, and the fixed robot won’t stop the Projectile anymore or be able to hurt the main character.
+
+### Projectile Cleanup
+
+One minor issue with your current solution is that, if you get Ruby to throw the Cog and it doesn’t collide with anything, the Cog will keep on going outside of the screen for as long as the game runs.
+As the game progresses, this could cause a performance problem if suddenly you have 500 cogs moving outside of the view.
+
+```cs
+void Update()
+{
+    if(transform.position.magnitude > 1000.0f)
+    {
+        Destroy(gameObject);
+    }
+}
+```
+
+There are other ways to handle this, depending on the game. For example, you could get the distance between the character and the cog (with the function Vector3.Distance (a,b) to compute the distance between the position a and position b).
+
+Or you could use a timer in the Projectile script, so when the Cog is launched you set your timer to something like 4 seconds, you would decrement it in the Update function and then destroy the Cog when the timer reaches 0.
+
+### Cinemachine
+
+- Install package from Window PackageManager
+- Cinemachine Create2DCamera
+
+In 3D applications like Unity, cameras can have two modes:
+
+1. Perspective: where all lines going away from the camera converge to a point, making things appear smaller as they get farther away from the camera. This is a bit like a straight road disappearing in the distance and its two sides seem to converge into a single point.
+2. Orthographic: where all parallel lines stay parallel.
+
+Orthographic size is simply how many units the camera fits in half of its height, because that’s how the camera works. So, because we set it to 5, we can see 10 units of the world in the vertical direction of the screen. Make sure you set the half height, so if you want your camera to be able to see 50 units of the world in its height, set it to 25.
+
+Why are you setting the height and not the width? Well, this is because the width changes depending on the resolution the user sets for their game window. Screens can have a lot of resolution ratios, such as 4:3, 16:9 and 16:10, so the camera will show more or less of the world’s width depending on the screen shape, but it will always show the same vertical height.
+
+#### Camera Bounds
+
+- Add CameraConfiner Extension to Cinemachine Virtual Cam
+- Create Empty GameObject
+- Name it CameraConfiner
+- Add Any Collider2D component and define bounds
+- **TIP:** While editing polygon collider, delete a point (like the top one on pentagon) by pressing the ```delete``` key as you drag it.
+- Drag CameraConfiner into Cinemachine BoundShape2D field
+- Add a layer to CameraConfiner
+- Remove all collisions to that layer in LayerCollisionMatrix to avoid player being pushed as camera collides with the Confiner
+
+---
 ---
 
 ## John Lemon

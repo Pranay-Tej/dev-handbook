@@ -26,8 +26,8 @@ git push heroku-frontend frontend-only:master
 
 ## Spring Boot
 
--   [Reference](https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku)
--   add `system.properties` to application root folder
+- [Reference](https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku)
+- add `system.properties` to application root folder
 
     ```md title="system.properties"
     java.runtime.version=11
@@ -35,19 +35,20 @@ git push heroku-frontend frontend-only:master
 
 ## Angular
 
--   [Reference](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147)
--   `ng build --aot --prod`
--   `enhanced resolve` not necessary
+- [Reference](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147)
+- `ng build --aot --prod`
+- `enhanced resolve` not necessary
 
 ## React
 
--   install serve from npm
+- install serve from npm
 
     ```bash title="project_folder"
     npm install serve
     ```
 
--   change `scripts` in `package.json`
+- change `scripts` in `package.json`
+
     ```js title="package.json"
     "scripts": {
         "dev": "react-scripts start",
@@ -55,15 +56,17 @@ git push heroku-frontend frontend-only:master
         ...
     },
     ```
--   now use
-    -   `npm run dev` for development mode
-    -   `npm run build` then `npm run start` for production mode
--   add `engines` for consistent environment
-    
+
+- now use
+  - `npm run dev` for development mode
+  - `npm run build` then `npm run start` for production mode
+- add `engines` for consistent environment
+
     ```js title="package.json"
     "engines": {
         "node": "12.16.2",
         "npm": "6.14.4"
     }
     ```
+
 - ```git push heroku master```

@@ -22,10 +22,10 @@ module.exports = {
         type: "category",
         label: "Languages",
         items: [
-            {
-                type: "doc",
-                id: "languages/languages",
-            },
+            // {
+            //     type: "doc",
+            //     id: "languages/languages",
+            // },
             {
                 type: "category",
                 label: "C++",
@@ -52,10 +52,10 @@ module.exports = {
         type: "category",
         label: "Frontend",
         items: [
-            {
-                type: "doc",
-                id: "frontend/frontend",
-            },
+            // {
+            //     type: "doc",
+            //     id: "frontend/frontend",
+            // },
             {
                 type: "category",
                 label: "HTML",
@@ -82,10 +82,10 @@ module.exports = {
         type: "category",
         label: "Backend",
         items: [
-            {
-                type: "doc",
-                id: "backend/backend",
-            },
+            // {
+            //     type: "doc",
+            //     id: "backend/backend",
+            // },
             {
                 type: "category",
                 label: "Spring Boot",
@@ -117,10 +117,10 @@ module.exports = {
         type: "category",
         label: "Devops",
         items: [
-            {
-                type: "doc",
-                id: "devops/devops",
-            },
+            // {
+            //     type: "doc",
+            //     id: "devops/devops",
+            // },
             {
                 type: "category",
                 label: "Docker",

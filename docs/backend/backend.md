@@ -1,7 +1,7 @@
 ---
 id: backend
-title: Backend-Index
-sidebar_label: Backend-Index
+title: Backend
+sidebar_label: Backend
 ---
 
 ## Spring Boot

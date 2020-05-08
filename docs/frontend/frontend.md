@@ -1,7 +1,7 @@
 ---
 id: frontend
-title: Frontend-Index
-sidebar_label: Frontend-Index
+title: Frontend
+sidebar_label: Frontend
 ---
 
 ## HTML
@@ -11,5 +11,3 @@ sidebar_label: Frontend-Index
 ## React
 
 ## Angular
-
-

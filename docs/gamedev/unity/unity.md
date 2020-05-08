@@ -174,6 +174,7 @@ PhysicsMaterial
 
 - Add ColliderComponent
 - OnCollisionEnter(Collision)
+  - Access collided gameobject with ```coll.gameObject```
 - OnCollisionExit
 
 #### Trigger
@@ -181,7 +182,7 @@ PhysicsMaterial
 - Use for triggering events
 - Physical collision is not simulated
 - Objects will pass through each other
-- OnTriggerEnter()
+- OnTriggerEnter(Collision)
   - Act on trigger event
 - OnTriggerEvent(Collider)
   - Access to the other collider object
@@ -204,6 +205,7 @@ PhysicsMaterial
             }
         }
     ```
+  - OnTriggerStay(Collider)
 
 - TIP: DeActivate a game object using gameObject.SetActive(false);
 - Example

@@ -6,7 +6,8 @@ sidebar_label: Data Structures
 
 > [GFG Data Structures](https://www.geeksforgeeks.org/data-structures/)
 
-## Contents <!-- omit in toc --> 
+## Contents <!-- omit in toc -->
+
 - [Linked List](#linked-list)
 - [Stack](#stack)
 - [Queue](#queue)
@@ -14,7 +15,6 @@ sidebar_label: Data Structures
 - [Heaps](#heaps)
 - [Trees](#trees)
 - [Graphs](#graphs)
-
 
 ## Linked List
 
@@ -30,6 +30,7 @@ sidebar_label: Data Structures
 - Merge Sort
 - Quick Sort
 - Floyd Algorithm
+
 > [Linked List : LeetCode Tutorial](https://leetcode.com/explore/learn/card/linked-list/)
 
 ## Stack
@@ -38,6 +39,7 @@ sidebar_label: Data Structures
 - Infix
 - Postfix
 - Prefix
+
 > [Stack : LeetCode Tutorial](https://leetcode.com/explore/learn/card/queue-stack/)
 
 ## Queue
@@ -45,12 +47,14 @@ sidebar_label: Data Structures
 - Queue using 2 Stacks
 - Priority Queue
 - Double-ended Queue
+
 > [Queue : LeetCode Tutorial](https://leetcode.com/explore/learn/card/queue-stack/)
 
 ## HashMaps
 
 - Basics
 - Collision Handling
+
 > [HashMaps : LeetCode Tutorial](https://leetcode.com/explore/learn/card/hash-table/)
 
 ## Heaps
@@ -76,9 +80,9 @@ sidebar_label: Data Structures
 - Cycle Detection
 - Union
 - Shortest Path Algorithms
-    - Dijkstra
-    - Bellman Ford
-    - _Extra:_ Floyd Warshall
+  - Dijkstra
+  - Bellman Ford
+  - _Extra:_ Floyd Warshall
 - Minimum Spanning Tree
-    - Prim's
-    - Kruskal
+  - Prim's
+  - Kruskal

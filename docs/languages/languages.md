@@ -1,7 +1,7 @@
 ---
 id: languages
-title: Languages-Index
-sidebar_label: Languages-Index
+title: Languages
+sidebar_label: Languages
 ---
 
 ## CPP
