@@ -117,8 +117,8 @@ sidebar_label: Documentation Tools
   ```
 
 :::note
-Docusaurus search information can only be generated from a production build. Local development is currently not supported.
 :::
+**NOTE:** Docusaurus search information can only be generated from a production build. Local development is currently not supported.
 
 ### Syntax Highlighting for Languages
 

@@ -4,19 +4,19 @@ title: Index
 sidebar_label: Index
 ---
 
-## [Online Resources](resources/resources)
+### [Online Resources](resources/resources)
 
-## Languages
+### Languages
 
 - [CPP](languages/c++/c++)
 - [Java](languages/java/java)
 - Python
 
-## [Data Structures](ds/ds)
+### [Data Structures](ds/ds)
 
-## [Algorithms](algorithms/algorithms)
+### [Algorithms](algorithms/algorithms)
 
-## Frontend
+### Frontend
 
 - [HTML](frontend/html/html)
 - [CSS](frontend/css/css)
@@ -24,26 +24,27 @@ sidebar_label: Index
 - [Angular](frontend/angular/angular)
 - [React](frontend/react/react)
 
-## Backend
+### Backend
 
 - [Spring Boot](backend/springboot/springboot)
+- [Flask](backend/flask/flask)
 
-## [Linux](linux/linux)
+### [Linux](linux/linux)
 
-## [Git](git/git)
+### [Git](git/git)
 
-## DevOps
+### DevOps
 
 - Docker
 
-## Deployment
+### Deployment
 
 - [Heroku](deployment/heroku)
 
-## GameDev
+### GameDev
 
 - [Unity](gamedev/unity/unity)
 - [Unity2D](gamedev/unity/unity2d)
 - [Unity Notes](gamedev/unity/unity-tutorial-notes)
 
-## [Documentation Tools](documentation/documentation)
+### [Documentation Tools](documentation/documentation)

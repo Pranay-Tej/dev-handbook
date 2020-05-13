@@ -453,6 +453,173 @@ Why are you setting the height and not the width? Well, this is because the widt
 - Add a layer to CameraConfiner
 - Remove all collisions to that layer in LayerCollisionMatrix to avoid player being pushed as camera collides with the Confiner
 
+### Particle Effects
+
+- Hierarchy Create Effects ParticleSystem
+- TextureSheetAnimation Mode Sprites Add(+)Sprites
+  - StartFrame Random 0 to 2
+  - FrameOverTime Select Point in Graph and Delete second point to disable animation
+- Shape
+  - Set Radius Angle
+- StartLifeTime
+  - Random 1.5 to 3
+- StartSize
+  - Random 0.3 to 0.5
+- StartSpeed
+  - Random 0.5 to 1
+- ColorOverTime
+  - Change Alpha to 0 on TopRight selector for fade effect
+- Size over time
+  - Use Graph
+- ParticleSystem
+  - Simulation Space Local/Global
+- Code
+  
+  ```cs
+  public ParticleSystem smokeEffect;
+  public void Fix()
+    {
+        smokeEffect.Stop();
+    }
+  ```
+
+- Drag ParticleSystem from Hierarchy to Robot as it's child
+- You may be wondering why the type is ParticleSystem and not Gameobject, since you are assigning a GameObject to it.
+That’s because if a public member is a Component or Script type (instead of GameObject), when you assign a GameObject to it in the Inspector, Unity stores the component of the type that is on the GameObject.
+- This prevents you from having to do GetComponent in the script like you did before. It also stops you from assigning a GameObject that doesn’t have that component type on it to that setting. This also avoids creating a bug by mistake.
+
+#### OneTimeOnly Effects
+
+- Untick Looping
+- Set Duration
+- StopAction Destroy
+- Emission
+  - RateOverTime 0
+  - Set Burst at 0.0 Time
+- Instatiate in Code
+  
+  ```cs
+  public ParticleSystem damageEffect;
+  void ChangeHealth(int amount){
+    ParticleSystem damageEffectParticles = Instantiate(damageEffect, rigidbody2d.position + Vector2.up * 0.7f, Quaternion.identity);
+  }
+  ```
+
+### UI
+
+#### Canvas
+
+- Create UI Canvas
+- RenderMode
+  - ScreenSpaceOverlay
+  - ScreenSpaceCamera
+  - WorldSpace
+- **TIP:** Hold Shift while resizing to scale uniformly
+
+#### Anchors
+
+- AnchorPresets
+  - Hold left while using AnchorPresets to stretch image
+
+#### Sprit Masking
+
+- Create UI Image
+- Set Anchors
+- Set Pivot
+  - Resizing is made from the pivot
+  - Ex: For health bar pivot set for left
+- Add Image to be masked
+  - Ex: Amount of health sprite
+- Select Mask Object
+  - Add MaskComponent
+  - Uncheck ShowMaskGraphic
+- Now Resizing MaskObject masks the Image
+- Changing through script
+  - Add Script to Image to be masked (child of the mask object)
+  - Take MaskObject as public variable
+  
+    ```cs
+      public Image mask;
+      float originalSize;
+
+      void Start()
+      {
+          originalSize = mask.rectTransform.rect.width;
+      }
+
+      public void SetValue(float value)
+      {
+          mask.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, originalSize * value);
+      }
+    ```
+
+### NPC Dialogue
+
+#### Canvas - World Space
+
+Setting Canvas Size
+
+- To set canvas of size 3 x 2 Unity units
+- All UI elements (such as image and text) work in pixels, so a Canvas size of width 3 and height 2 would create a box of 3 by 2 pixels.
+- Instead you will scale your Canvas, so the size in the Scene is reduced, but its width and height are kept to proper pixel values.
+- Set your Rect Transform:
+- Pos X and Pos Y to 0
+- Width to 300 and Height to 200
+- Then set the Scale to 0.01 in X, Y and Z
+- Canvas exists in the Scene, so it’s like any other GameObject and can be rendered behind those GameObjects.
+- To make sure nothing renders on top of your Canvas, set Order in Layer to a high value (for example, 10)
+- UI Text TextMeshPro
+- Import TMP Essentials
+
+#### Raycast
+
+- Use raycast from player to detect NPCs in range
+
+  ```cs
+  RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("NPC"));
+  ```
+
+### Audio
+
+- Add AudioSource Component To Game Object
+- Drag Auido Clip
+- Set Loop or No Loop
+- Set 2D (plays everywhere) or 3D (plays only in a specific region)
+- For 3D Set 3DSoundSettings Min/Max distance
+- For Background Music
+  - Create Empty GameObject BackgroundMusic
+  - Add Audio Source Component
+  - Enable Loop
+  - Enable Play on Awake
+- For Event Specific Audio
+
+  ```cs
+  AudioSource audioSource;
+
+  void Start()
+  {
+    audioSource= GetComponent<AudioSource>();
+  }
+
+  public void PlaySound(AudioClip clip)
+  {
+    audioSource.PlayOneShot(clip);
+  }
+  ```
+
+#### Camera Audio Fix for 2D games (Attenuation Fix)
+
+Camera is at z = 10 units for 2D Games. Hence Spatial(3D) sounds cannot be heard because of attenuation along z axis
+
+**FIX:**
+
+- Create an EmptyObject as child to MainCamera as Listener
+- Set transform to 0 0 10. Since positioning is relative to parent, position will be at z = 0 for the Listener
+- Add AudioListener Component to Listener
+- Remove AudioListener from MainCamera
+
+### Build
+
 ---
 ---
 
@@ -471,8 +638,8 @@ An Animator component can change when it performs its Update. By default it perf
 ### Movement
 
 :::note
-This means that your character will move faster diagonally than it will along a single axis.  In order to make sure this doesn’t happen, you need to ensure the movement vector always has the same magnitude.  You can do this by normalizing it.  Normalizing a vector means keeping the vector’s direction the same, but changing its magnitude to 1.  
 :::
+**NOTE:**This means that your character will move faster diagonally than it will along a single axis.  In order to make sure this doesn’t happen, you need to ensure the movement vector always has the same magnitude.  You can do this by normalizing it.  Normalizing a vector means keeping the vector’s direction the same, but changing its magnitude to 1.
 
 ```cs
  m_Movement.Set(horizontal, 0f, vertical);

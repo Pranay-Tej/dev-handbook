@@ -20,6 +20,10 @@ sidebar_label: C++
   - Install C++ Language support extension
   - Install Code Runner extension
   - RightClick RunCode
+  - Write Access to terminal
+    - Open CommandPallette <kbd>Ctrl + Shift + P</kbd> or View CommandPalette
+    - SelectDefaultShell cmd
+    - File Preferences Settings Users Extensions RunCodeConfiguration Enable RunInTerminal
 
 ### Windows
 

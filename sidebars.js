@@ -91,6 +91,11 @@ module.exports = {
                 label: "Spring Boot",
                 items: ["backend/springboot/springboot"]
             },
+            {
+                type: "category",
+                label: "Flask",
+                items: ["backend/flask/flask"]
+            },
         ],
     },
     {

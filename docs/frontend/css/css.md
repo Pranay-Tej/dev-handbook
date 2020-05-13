@@ -152,8 +152,8 @@ Example: ```transition: all 0.5s ease-in 0.5s```;
     ```
 
 :::note
-Define ALL properties in each step in each step (even if they are same) to avoid confusion
 :::
+**NOTE:** Define ALL properties in each step in each step (even if they are same) to avoid confusion
 
 - animation property
 
