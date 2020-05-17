@@ -239,3 +239,217 @@ public class Controller2D : MonoBehaviour
 ### Unity Microgame Platformer Method
 
 - Use kinematic object and add gravity manually ?? Physics2D.gravity
+
+---
+
+## One Way Jumping Platform
+
+- Source: BalckThornProd YouTube Channel
+- Create a sprite with 16 x 4 pixels
+- Use 8 PixelPerUnit in Unity to make the platform thinner than normal platforms
+- Use MeshType FullRect
+- Drag into Scene
+- Change DrawMode Tiled
+- TileMode Adaptive
+- Now Tile can be resized using the RectTool
+- Add BoxCollider2D
+- Enable AutoTiling
+- Add PlatformEffector2D Component
+- Enable UseByEffector in BoxCollider2D
+
+    ```cs
+    public class OneWayPlatform : MonoBehaviour
+    {
+        private float keyHoldTime = 0.2f;
+
+        private float keyHoldTimer;
+
+        private PlatformEffector2D platformEffector2D;
+
+        void Start()
+        {
+            platformEffector2D = GetComponent<PlatformEffector2D>();
+        }
+
+
+        void Update()
+        {
+            if(Input.GetKeyUp(KeyCode.S)){
+                // if player releases the down key
+                // reset the timer
+                keyHoldTimer = keyHoldTime;
+            }
+
+            if (Input.GetKey(KeyCode.S))
+            {
+                if (keyHoldTimer <= 0)
+                {
+                    // if the player holds the key for long enough disable the platform
+                    platformEffector2D.rotationalOffset = 180f;
+                    keyHoldTimer = keyHoldTime;
+                }
+                else
+                {
+                    // count the time player has held the key
+                    keyHoldTimer -= Time.deltaTime;
+                }
+            }
+
+            if(Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.W)){
+                // reset the platform whenever player wants to jump
+                // or if the player is climbing a ladder
+                // reset the top of ladder
+                platformEffector2D.rotationalOffset = 0f;
+            }
+        }
+    }
+    ```
+
+---
+
+## Ladder
+
+### Using Raycast Method
+
+- Source: BlackThornProd YouTube Channel
+- Create a Sprite 16 x 4 pixels
+- Use 8 PixelPerUnit in Unity
+- Use MeshType FullRect
+- Drag into Scene
+- Change DrawMode Tiled
+- TileMode Adaptive
+- Drag vertically to elongate the ladder
+- Add BoxCollider2D
+- Enable AutoTiling
+- Enable IsTrigger
+- Create and add Ladder Layer
+- Cast a ray from player foot and check if it collides with the ladder
+
+    ```cs
+    public float climbSpeed;
+    private bool isClimbing = false;
+    public float ladderCheckDistance;
+    public LayerMask whatIsLadder;
+    public Transform feetPosition;
+    void Update()
+    {
+        inputVerticalRaw = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            isClimbing = false;
+        }
+
+    }
+    private void FixedUpdate()
+    {
+        ClimbLadder();
+    }
+    private void ClimbLadder(){
+        RaycastHit2D checkForLadder = Physics2D.Raycast(feetPosition.position, Vector2.up, ladderCheckDistance, whatIsLadder);
+
+        if(checkForLadder.collider != null){
+            if(inputVerticalRaw != 0){
+                isClimbing = true;
+            }
+        }else{
+            isClimbing = false;
+        }
+
+        if(isClimbing && checkForLadder.collider != null){
+            rb.gravityScale = 0;
+            rb.velocity = new Vector2(rb.velocity.x, inputVerticalRaw * climbSpeed);
+        }else{
+            rb.gravityScale = 3;
+        }
+    }
+    ```
+
+### Using OnTrigger Methods
+
+- Create a Sprite 16 x 4 pixels
+- Use 8 PixelPerUnit in Unity
+- Use MeshType FullRect
+- Drag into Scene
+- Change DrawMode Tiled
+- TileMode Adaptive
+- Drag vertically to elongate the ladder
+- Add BoxCollider2D
+- Enable AutoTiling
+- Enable IsTrigger
+- Add a script Ladder to trigger ```isOnLadder```
+  
+    ```cs title="Ladder.cs"
+    private void OnTriggerEnter2D(Collider2D collider) {
+        if(collider.tag == "Player"){
+            collider.GetComponent<CharacterController2D>().isOnLadder = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collider) {
+        if(collider.tag == "Player"){
+            collider.GetComponent<CharacterController2D>().isOnLadder = false;
+        }
+    }
+    ```
+
+- Use ```isOnLadder``` in PlayerController
+
+    ```cs title="PlayerController"
+    public bool isOnLadder = false;
+    public float climbSpeed;
+    private bool isClimbing = false;
+    private float normalGravityScale;
+
+    void Start()
+    {
+        normalGravityScale = rb.gravityScale;
+    }
+    void Update()
+    {
+        inputVerticalRaw = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            isClimbing = false;
+        }
+
+    }
+    private void FixedUpdate()
+    {
+        ClimbLadder();
+    }
+    private void ClimbLadder(){
+        if(isOnLadder){
+           if(inputVerticalRaw != 0){
+               isClimbingLadder = true;
+           }
+        }else{
+            isClimbingLadder = false;
+        }
+
+        if(isClimbingLadder){
+            rb.gravityScale = 0f;
+            rb.velocity = new Vector2(rb.velocity.x, inputVerticalRaw * climbSpeed);
+        }else{
+            // reset gravity scale
+            rb.gravityScale = normalGravityScale;
+        }
+    }
+    ```
+
+### Auto Center Player on Ladder
+
+---
+
+## Jump Pad
+
+---
+
+## Moving Platform
+
+---
+
+## Self Destroying Platform
+
+---

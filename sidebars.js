@@ -100,6 +100,17 @@ module.exports = {
     },
     {
         type: "category",
+        label: "Database",
+        items: [
+            {
+                type: "category",
+                label: "MongoDB",
+                items: ["db/mongo/mongo"]
+            }
+        ],
+    },
+    {
+        type: "category",
         label: "Linux",
         items: [
             {
@@ -154,6 +165,7 @@ module.exports = {
                     "gamedev/unity/unity",
                     "gamedev/unity/unity2d",
                     "gamedev/unity/unity-tutorial-notes",
+                    "gamedev/unity/unity-udemy-btp-course",
 
                 ],
             },

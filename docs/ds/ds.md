@@ -75,8 +75,10 @@ sidebar_label: Data Structures
 
 ## Graphs
 
-- Breadh First Search
 - Depth First Search
+- Breadh First Search
+  - Shortest Path in Unweighted Graph
+- Connected Components
 - Cycle Detection
 - Union
 - Shortest Path Algorithms
