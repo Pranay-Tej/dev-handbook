@@ -12,6 +12,52 @@ sidebar_label: Angular
 
 ## Setup
 
-## Index
+### Linux
 
-### Routing
+- Install Node
+- Install angular-cli from npm ```npm install -g @angular/cli```
+- Create project ```ng new test-project```
+  - options
+    - (skip dependencies installation) ```--skip-install```
+    - to install dependencies ```npm install```
+- Generate ```ng generate component test-component``` or ```ng g c test-component```
+  - Example: ```ng g c components/home/nav```
+  - VS Code extension Angular Files
+- Serve application ```ng serve``` or ```ng serve --open --port 4201``` or ```ng s -o -p 4201```
+- Build ```ng build``` or ```ng build --dev``` or ```ng build --prod```
+  - Builds application in ```dist``` folder
+
+## Checklist
+
+- [Flow](angular-flow)
+- [Modules](angular-modules)
+- [Components](angular-components)
+- Services
+  - Dependency Injection
+- Routing
+- Component Communication
+- Data Binding
+  - Interpolation
+  - Property Binding
+  - Event Binding
+  - Two-Way Binding
+- Directives
+  - Structural
+  - Attribute
+- Connection to Backend
+  - Http
+  - Http Caching
+  - Tracking Progresss
+- RxJS
+  - Observables
+  - Subject
+  - pipe
+  - map
+  - tap
+- Dockerize
+  - nginx
+  - Dockerfile
+  - docker-compose
+- Forms Module
+- Deployment
+  - Heroku

@@ -4,6 +4,20 @@ title: Unity 2D
 sidebar_label: Unity 2D
 ---
 
+## Contents <!-- omit in toc -->
+
+- [Player Movement](#player-movement)
+  - [All possible methods](#all-possible-methods)
+  - [Unity Microgame Platformer Method](#unity-microgame-platformer-method)
+- [One Way Jumping Platform](#one-way-jumping-platform)
+- [Ladder](#ladder)
+  - [Using Raycast Method](#using-raycast-method)
+  - [Using OnTrigger Methods](#using-ontrigger-methods)
+  - [Auto Center Player on Ladder](#auto-center-player-on-ladder)
+- [Jump Pad](#jump-pad)
+- [Moving Platform](#moving-platform)
+- [Self Destroying Platform](#self-destroying-platform)
+
 ## Player Movement
 
 ### All possible methods

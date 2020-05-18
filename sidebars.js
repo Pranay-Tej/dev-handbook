@@ -74,7 +74,12 @@ module.exports = {
             {
                 type: "category",
                 label: "Angular",
-                items: ["frontend/angular/angular"],
+                items: [
+                    "frontend/angular/angular",
+                    "frontend/angular/angular-flow",
+                    "frontend/angular/angular-modules",
+                    "frontend/angular/angular-components",
+                ],
             },
         ],
     },

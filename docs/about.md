@@ -32,7 +32,7 @@ Built using [Docusaurus 2](https://v2.docusaurus.io/). Deployed on [Zeit (Vercel
 
 [Guide](documentation/documentation)
 
-### My Profiles
+### Profiles
 
 #### [GitHub](https://github.com/Pranay-Tej)
 
