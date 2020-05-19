@@ -47,7 +47,7 @@ sidebar_label: Components
 - Two-Way Binding
   - ```<input [(ngModel)] = "userInput">```
 
-More in [Data Binding Section](angular-data-binding)
+Read [Data Binding Section](angular-data-binding)
 
 ## Directives
 
@@ -59,7 +59,7 @@ More in [Data Binding Section](angular-data-binding)
   - ```ngClass```
   - ```ngStyle```
 
-More in [Directives Section](angular-directives)
+Read [Directives Section](angular-directives)
 
 ## Life Cycle of Components
 
@@ -118,4 +118,4 @@ Order:
   }
 ```
 
-More in [Component Communication Section](angular-component-communication)
+Read [Component Communication Section](angular-component-communication)

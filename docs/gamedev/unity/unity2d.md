@@ -285,7 +285,6 @@ public class Controller2D : MonoBehaviour
             platformEffector2D = GetComponent<PlatformEffector2D>();
         }
 
-
         void Update()
         {
             if(Input.GetKeyUp(KeyCode.S)){

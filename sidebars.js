@@ -79,6 +79,7 @@ module.exports = {
                     "frontend/angular/angular-flow",
                     "frontend/angular/angular-modules",
                     "frontend/angular/angular-components",
+                    "frontend/angular/angular-services",
                 ],
             },
         ],

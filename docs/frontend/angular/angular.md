@@ -32,7 +32,7 @@ sidebar_label: Angular
 - [Flow](angular-flow)
 - [Modules](angular-modules)
 - [Components](angular-components)
-- Services
+- [Services](angular-services)
   - Dependency Injection
 - Routing
 - Component Communication

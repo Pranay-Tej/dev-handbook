@@ -66,4 +66,4 @@ Load only required modules based on current requirement
 
 Example: User viewing the app may not require admin-module to be loaded
 
-More in [**Routing Section**](angular-routing)
+Read [**Routing Section**](angular-routing)
