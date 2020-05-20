@@ -4,6 +4,18 @@ title: Components
 sidebar_label: Components
 ---
 
+## Contents <!-- omit in toc -->
+
+- [Definition](#definition)
+- [```@Component```](#component)
+- [HTML Template](#html-template)
+- [Data binding](#data-binding)
+- [Directives](#directives)
+- [Life Cycle of Components](#life-cycle-of-components)
+- [Input and Output](#input-and-output)
+  - [```@Input```](#input)
+  - [```@Output```](#output)
+
 ## Definition
 
 - Building blocks of the angular app.

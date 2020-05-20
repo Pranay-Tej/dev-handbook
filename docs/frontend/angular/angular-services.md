@@ -4,6 +4,13 @@ title: Services
 sidebar_label: Services
 ---
 
+## Contents <!-- omit in toc -->
+
+- [Usage](#usage)
+- [```@Injectable```](#injectable)
+- [Dependency Injection](#dependency-injection)
+  - [Injection Tree](#injection-tree)
+
 ## Usage
 
 - Managing Logic

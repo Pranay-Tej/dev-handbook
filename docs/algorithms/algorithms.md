@@ -6,7 +6,8 @@ sidebar_label: Algorithms by Topic
 
 > [GFG Algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
 
-## Contents <!-- omit in toc --> 
+## Contents <!-- omit in toc -->
+
 - [Sorting](#sorting)
 - [Searching](#searching)
 - [BackTracking](#backtracking)

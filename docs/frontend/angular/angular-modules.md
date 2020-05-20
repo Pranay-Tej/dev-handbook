@@ -4,6 +4,13 @@ title: Modules
 sidebar_label: Modules
 ---
 
+## Contents <!-- omit in toc -->
+
+- [Definition](#definition)
+- [```@NgModule```](#ngmodule)
+- [Example](#example)
+- [Lazy Loading](#lazy-loading)
+
 ## Definition
 
 Files where we define

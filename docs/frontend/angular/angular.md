@@ -34,7 +34,7 @@ sidebar_label: Angular
 - [Components](angular-components)
 - [Services](angular-services)
   - Dependency Injection
-- Routing
+- [Routing](angular-routing)
 - Component Communication
 - Data Binding
   - Interpolation

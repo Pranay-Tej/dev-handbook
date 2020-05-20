@@ -5,6 +5,7 @@ sidebar_label: Unity Tutorial Notes
 ---
 
 ## Contents <!-- omit in toc -->
+
 - [Brackey's Tutorial - 2D Game](#brackeys-tutorial---2d-game)
   - [Sorting Layers](#sorting-layers)
   - [Sprite Animation](#sprite-animation)
