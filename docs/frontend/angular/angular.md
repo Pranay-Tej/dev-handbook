@@ -36,7 +36,7 @@ sidebar_label: Angular
   - Dependency Injection
 - [Routing](angular-routing)
 - Component Communication
-- Data Binding
+- [Data Binding](angular-data-binding)
   - Interpolation
   - Property Binding
   - Event Binding

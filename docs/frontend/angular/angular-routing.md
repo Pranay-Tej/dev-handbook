@@ -154,7 +154,7 @@ sidebar_label: Routing
 - navigation through a TS file
 
 ```html title="HomeComponent.HTML"
-    <a (click)="navigateToArticle">Article31</a>
+    <a (click)="navigateToArticle()">Article31</a>
 ```
 
 ```ts title="HomeComponent.TS"
