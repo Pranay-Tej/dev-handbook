@@ -41,7 +41,7 @@ sidebar_label: Angular
   - Property Binding
   - Event Binding
   - Two-Way Binding
-- Directives
+- [Directives](angular-directives)
   - Structural
   - Attribute
 - Connection to Backend

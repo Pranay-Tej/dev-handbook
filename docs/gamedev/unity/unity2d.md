@@ -1,7 +1,7 @@
 ---
 id: unity2d
-title: Unity 2D
-sidebar_label: Unity 2D
+title: 2D
+sidebar_label: 2D
 ---
 
 ## Contents <!-- omit in toc -->

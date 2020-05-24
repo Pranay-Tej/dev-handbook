@@ -23,7 +23,7 @@ sidebar_label: Data Binding
 
 ## Interpolation
 
-```html title="ArticleComponent.HTML
+```html title="ArticleComponent.HTML"
 <p>
     {{ name }}
 </p>
@@ -35,7 +35,7 @@ name : string = 'Article Name';
 
 ## Property Binding
 
-```html title="ArticleComponent.HTML
+```html title="ArticleComponent.HTML"
 <a title="{{ title_variable }}">Article31</a>
 <!-- or -->
 <a [title]="title_variable">Article31</a>
@@ -47,7 +47,7 @@ title_variable : string = 'Open Article31';
 
 ## Event Binding
 
-```html title="ArticleComponent.HTML
+```html title="ArticleComponent.HTML"
 <button (click)="openArticle()">Open</button>
 ```
 
@@ -70,7 +70,7 @@ openArticle() : void {
 - Pass ```$event``` to the function to act on it
 - Example: ```(click)``` &rarr; ```$event``` &rarr; contains click location
 
-```html title="ArticleComponent.HTML
+```html title="ArticleComponent.HTML"
 <button (click)="drawPoint($event)">Draw</button>
 ```
 
@@ -86,7 +86,7 @@ drawPoint(event: MouseEvent) : void {
 - In the below example event is raised on ```<input>``` element which has property 'value'
 - ```<input value="...">``` &rarr; ```event.target.value```
 
-```html title="ArticleComponent.HTML
+```html title="ArticleComponent.HTML"
 <input (keyup)="function($event)">Draw</input>
 ```
 
@@ -106,7 +106,7 @@ function(event: any) : void {
 
 ## Two-Way Binding
 
-```html title="ArticleComponent.HTML
+```html title="ArticleComponent.HTML"
 <input [(ngModel)] = "name" type="text"/>
 
 <p>{{ name }}</p>
@@ -123,7 +123,7 @@ name : string;
 - Gives more control to act or modify data by defining a function for ```(ngModelChange)``` event
 - Useful to update parent component's data without adding an additional event handler
 
-```html title="ArticleComponent.HTML
+```html title="ArticleComponent.HTML"
 <input
     [ngModel] = "name"
     (ngModelChange)="capitalizeWord($event)"
@@ -147,7 +147,7 @@ capitalize(name : string){
 
 ### Method 1
 
-```html title="ArticleComponent.HTML
+```html title="ArticleComponent.HTML"
 <input
     [ngModel] = "name"
     (ngModelChange)="name=$event"
@@ -163,7 +163,7 @@ name : string;
 
 ### Method 2
 
-```html title="ArticleComponent.HTML
+```html title="ArticleComponent.HTML"
 <input
     [ngModel] = "name"
     (ngModelChange)="setNameInTS($event)"

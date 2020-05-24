@@ -82,6 +82,7 @@ module.exports = {
                     "frontend/angular/angular-services",
                     "frontend/angular/angular-routing",
                     "frontend/angular/angular-data-binding",
+                    "frontend/angular/angular-directives",
                 ],
             },
         ],

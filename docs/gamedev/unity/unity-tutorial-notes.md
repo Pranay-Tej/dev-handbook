@@ -1,7 +1,7 @@
 ---
 id: unity-tutorial-notes
-title: Unity Tutorial Notes
-sidebar_label: Unity Tutorial Notes
+title: Tutorial Notes
+sidebar_label: Tutorial Notes
 ---
 
 ## Contents <!-- omit in toc -->
