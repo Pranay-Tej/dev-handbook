@@ -44,10 +44,10 @@ sidebar_label: Angular
 - [Directives](angular-directives)
   - Structural
   - Attribute
-- Connection to Backend
-  - Http
+- [HTTP](angular-http)
+  - HttpClientModule
   - Http Caching
-  - Tracking Progresss
+  - Tracking Progress
 - RxJS
   - Observables
   - Subject
