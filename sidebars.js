@@ -172,7 +172,7 @@ module.exports = {
                 label: "Unity",
                 items: [
                     "gamedev/unity/unity",
-                    "gamedev/unity/unity2d",
+                    "gamedev/unity/unity-2d",
                     "gamedev/unity/unity-tutorial-notes",
                     "gamedev/unity/unity-udemy-btp-course",
 

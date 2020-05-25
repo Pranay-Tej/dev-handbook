@@ -11,7 +11,7 @@ sidebar_label: Udemy BTP Course
 - Make rough prototypes
 - Fix on a design
 - Fix light source on a layer to make lights and shadows consitent consistent for all other drawings
-- Use layers to seperately draw different parts
+- Use layers to separately draw different parts
   - Use layers to add paint to each part
   - Merge outline and painted layer of each part
 - Make a new image of all parts by copy pasting the parts from the layers
@@ -105,7 +105,7 @@ sidebar_label: Udemy BTP Course
   }
   ```
 
-  ### Drawing Tips
+### Drawing Tips
 
-  - Draw on paper, Scan and use it as background layer
-  - **TIP:** Use ClippingMasks to draw only on the layer
+- Draw on paper, Scan and use it as background layer
+- **TIP:** Use ClippingMasks to draw only on the layer
