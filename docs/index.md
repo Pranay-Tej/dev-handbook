@@ -48,7 +48,8 @@ sidebar_label: Index
 ### GameDev
 
 - [Unity](gamedev/unity/unity)
-- [Unity2D](gamedev/unity/unity2d)
-- [Unity Notes](gamedev/unity/unity-tutorial-notes)
+- [2D](gamedev/unity/unity-2d)
+- [Tutorial Notes](gamedev/unity/unity-tutorial-notes)
+- [Udemy BTP Course](gamedev/unity/unity-udemy-btp-course)
 
 ### [Documentation Tools](documentation/documentation)

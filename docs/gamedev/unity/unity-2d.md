@@ -17,6 +17,7 @@ sidebar_label: 2D
 - [Jump Pad](#jump-pad)
 - [Moving Platform](#moving-platform)
 - [Trap - Death From Above](#trap---death-from-above)
+- [Gate and Keys](#gate-and-keys)
 
 ## Player Movement
 
@@ -717,4 +718,84 @@ public class SelfDestroyingPlatform : MonoBehaviour
 
 ## Trap - Death From Above
 
+- Create EmptyGameObject Trap-DeathFromAbove
+- Add Trap Sprite as child
+  - Add Rigidbody2D, BoxCollider2D to Trap
+    - Set Gravity Scale to 0
+  - Add DeathFromAboveTrap Script to Trap
+
+```cs title="DeathFromAboveTrap"
+private void OnCollisionEnter2D(Collision2D collision) {
+    if (collision.collider.tag == "Player")
+    {
+        //  Death Function
+        Destroy(collision.collider.gameObject);
+    }else{
+        // Destroy collision.collider
+    }
+}
+```
+
+- Add TriggerArea EmptyGameObject
+  - Add BoxCollider2D and make it a Trigger
+  - Add DeathFromAboveTrigger Script to Trigger
+  - Drag Trap Object into TrapRigidBody field in Inspector
+
+```cs title="DeathFromAboveTrigger"
+public float fallSpeed;
+public Rigidbody2D TrapRigidbody;
+
+private void OnTriggerEnter2D(Collider2D collider)
+{
+    TrapRigidbody.gravityScale = fallSpeed;
+}
+```
+
+- Make a prefab of Trap-DeathFromAbove object
+
 ---
+
+## Gate and Keys
+
+- Create EmptyGameObject GateAndKeys
+- Add Gate Sprite as child
+  - Add Gate Script
+  - Edit number of keys in the inspector
+
+```cs title="Gate"
+public int keysToUnlock;
+
+private int keysRemaining;
+
+private void OnCollisionEnter2D(Collision2D collision) {
+    if(collision.collider.tag == "Player"){
+        if(keysRemaining == 0){
+            Destroy(gameObject, 0.5f);
+        }
+    }
+}
+
+public void KeyCollected(){
+    keysRemaining--;
+}
+
+void Start()
+{
+    keysRemaining = keysToUnlock;
+}
+```
+
+- Add Key Sprite as child
+  - Add Key Script
+  - Drag Gate Object into Gate field in Inspector
+
+```cs title="Key"
+public Gate gate;
+
+private void OnTriggerEnter2D(Collider2D collider) {
+    if(collider.tag == "Player"){
+        gate.KeyCollected();
+        Destroy(gameObject);
+    }
+}
+```
