@@ -80,6 +80,7 @@ module.exports = {
                     "frontend/angular/angular-modules",
                     "frontend/angular/angular-components",
                     "frontend/angular/angular-services",
+                    "frontend/angular/angular-component-communication",
                     "frontend/angular/angular-routing",
                     "frontend/angular/angular-data-binding",
                     "frontend/angular/angular-directives",
