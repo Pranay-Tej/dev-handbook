@@ -76,6 +76,7 @@ module.exports = {
                 label: "Angular",
                 items: [
                     "frontend/angular/angular",
+                    "frontend/angular/angular-folder-structure",
                     "frontend/angular/angular-flow",
                     "frontend/angular/angular-modules",
                     "frontend/angular/angular-components",

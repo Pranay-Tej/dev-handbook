@@ -29,6 +29,7 @@ sidebar_label: Angular
 
 ## Checklist
 
+- [Folder Structure](angular-folder-structure)
 - [Flow](angular-flow)
 - [Modules](angular-modules)
 - [Components](angular-components)
