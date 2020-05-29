@@ -29,4 +29,4 @@ Source: Code with Mosh
 
 - Angular CLI uses webpack to bundle typescript, style bundles
 - Webpack compiles on any changes to files
-- Adds/Injects bundles to index.html <scripts> tag at runtime
+- Adds/Injects bundles to index.html ```<scripts>``` tag at runtime
