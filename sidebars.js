@@ -71,7 +71,8 @@ module.exports = {
                 label: "React",
                 items: [
                     "frontend/react/react",
-                    "frontend/react/react-folder-structure"
+                    "frontend/react/react-folder-structure",
+                    "frontend/react/react-flow"
                 ],
             },
             {
