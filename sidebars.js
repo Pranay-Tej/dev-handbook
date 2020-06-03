@@ -69,7 +69,10 @@ module.exports = {
             {
                 type: "category",
                 label: "React",
-                items: ["frontend/react/react"],
+                items: [
+                    "frontend/react/react",
+                    "frontend/react/react-folder-structure"
+                ],
             },
             {
                 type: "category",

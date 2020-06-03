@@ -13,6 +13,35 @@ sidebar_label: React
 
 ## Setup
 
-## Index
+- Install Node
+- Use ```create-react-app```
 
-### Routing
+```bash
+npx create-react-app example
+cd example
+npm start
+```
+
+## Checklist
+
+- [Folder Structure](react-folder-structure)
+- [Flow](react-flow)
+- [Components](react-components)
+  - Class
+  - Functional
+- JSX
+- Props
+- State
+- Component Communication
+- Styles
+- LifeCycle Methods
+- Conditional Render
+- Lists Render
+- EventHandling
+- Forms
+- Services
+- HTTP
+- Hooks
+- React Router
+- Deployment
+  - Heroku
