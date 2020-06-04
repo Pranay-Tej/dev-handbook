@@ -72,7 +72,8 @@ module.exports = {
                 items: [
                     "frontend/react/react",
                     "frontend/react/react-folder-structure",
-                    "frontend/react/react-flow"
+                    "frontend/react/react-flow",
+                    "frontend/react/react-components"
                 ],
             },
             {

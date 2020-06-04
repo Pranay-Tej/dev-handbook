@@ -27,9 +27,9 @@ npm start
 - [Folder Structure](react-folder-structure)
 - [Flow](react-flow)
 - [Components](react-components)
-  - Class
+  - JSX
+  - Class-based
   - Functional
-- JSX
 - Props
 - State
 - Component Communication
