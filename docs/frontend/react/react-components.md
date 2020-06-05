@@ -10,9 +10,16 @@ Components are building blocks of React app
 
 ## JSX
 
-- JSX (JavaScript XML) is extenstion to JavaScript language syntax
+- JSX (JavaScript XML) is extension to JavaScript language syntax
 - Enables HTML like code in components
 - Is converted into pure JS in the background
+
+### Switching between JSX and JavaScript
+
+```js
+<h1>Hello {`${firstName} ${lastName}`}!</h1>
+<p>{ count }</p>
+```
 
 ## Functional Components
 
@@ -52,6 +59,22 @@ ReactDOM.render(
   ,
   document.getElementById("root")
 )
+```
+
+### Separate Files for Components
+
+```js title="Content.js"
+import React from 'react'
+
+function Content(){
+    return(
+        <div>
+            <p>Content...</p>
+        </div>
+    )
+}
+
+export default Content
 ```
 
 ## Class-based Components

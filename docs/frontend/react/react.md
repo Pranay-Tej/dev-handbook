@@ -30,13 +30,13 @@ npm start
   - JSX
   - Class-based
   - Functional
-- Props
+- [Props](react-props)
 - State
 - Component Communication
 - Styles
-- LifeCycle Methods
 - Conditional Render
 - Lists Render
+- LifeCycle Methods
 - EventHandling
 - Forms
 - Services
