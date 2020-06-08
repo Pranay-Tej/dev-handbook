@@ -122,17 +122,33 @@ npx http-server ./build
 
 - [Source](https://v2.docusaurus.io/docs/markdown-features/#syntax-highlighting)
 
-  ```js title="docusaurus.config.js"
-  module.exports = {
-  // ...
-  themeConfig: {
-      prism: {
-        additionalLanguages: ['csharp'],
-      },
-      // ...
+```js title="docusaurus.config.js"
+module.exports = {
+// ...
+themeConfig: {
+    prism: {
+      additionalLanguages: ['csharp'],
     },
-  };
-  ```
+    // ...
+  },
+};
+```
+
+### Syntax Highlight Theme
+
+```js title="docusaurus.config.js"
+module.exports = {
+// ...
+themeConfig: {
+    prism: {
+      theme: require('prism-react-renderer/themes/oceanicNext'),
+    },
+    // ...
+  },
+};
+```
+
+- [Theme Options](https://github.com/FormidableLabs/prism-react-renderer/tree/master/src/themes)
 
 ### Deployment
 
