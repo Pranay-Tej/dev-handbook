@@ -79,7 +79,7 @@ module.exports = {
     // },
     prism: {
       additionalLanguages: ['csharp'],
-      theme: require('prism-react-renderer/themes/duotoneDark'),
+      theme: require('prism-react-renderer/themes/oceanicNext'),
     },
   },
   presets: [
