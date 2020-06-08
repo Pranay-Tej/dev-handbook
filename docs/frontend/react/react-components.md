@@ -23,7 +23,7 @@ Components are building blocks of React app
 
 ## Functional Components
 
-```js title="index.js"
+```jsx title="index.js"
 import React from "react"
 import ReactDOM from "react-dom"
 
@@ -63,7 +63,7 @@ ReactDOM.render(
 
 ### Separate Files for Components
 
-```js title="Content.js"
+```jsx title="Content.js"
 import React from 'react'
 
 function Content(){
@@ -79,7 +79,7 @@ export default Content
 
 ## Class-based Components
 
-```js title="index.js"
+```jsx title="index.js"
 import React from "react"
 import ReactDOM from "react-dom"
 

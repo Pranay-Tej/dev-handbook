@@ -16,7 +16,7 @@ sidebar_label: Props
 
 ## Usage in Functional Components
 
-```js title="Welcome.js"
+```jsx title="Welcome.js"
 import React from 'react'
 
 function Welcome(){
@@ -38,7 +38,7 @@ function Welcome(){
 
 - props object received as function argument
 
-```js title="Greeting.js"
+```jsx title="Greeting.js"
 import React from 'react'
 
 function Greeting(props){
@@ -61,7 +61,7 @@ function Greeting(props){
 
 ## Usage in Class-based Components
 
-```js title="Welcome.js"
+```jsx title="Welcome.js"
 import React from 'react'
 
 class Welcome extends React.Component{
@@ -77,7 +77,7 @@ class Welcome extends React.Component{
 
 - React.Component class has props object as a property
 
-```js title="Greeting.js"
+```jsx title="Greeting.js"
 import React from 'react'
 
 class Greeting extends React.Component{
@@ -106,7 +106,7 @@ class Greeting extends React.Component{
 - To pass dynamic html content in components
 - Use ```{ props.children }``` to render children in the DOM tree of component
 
-```js title="App.js"
+```jsx title="App.js"
 function App(){
     return(
         <div>
@@ -128,7 +128,7 @@ function App(){
 }
 ```
 
-```js title="Greeting.js"
+```jsx title="Greeting.js"
 import React from 'react'
 
 function Greeting(props){

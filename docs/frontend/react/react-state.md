@@ -23,7 +23,7 @@ sidebar_label: State
 
 ## Usage in Functional Components
 
-```js title="Welcome.js"
+```jsx title="Welcome.js"
 import React from 'react'
 
 function Welcome(){
@@ -37,7 +37,7 @@ function Welcome(){
 
 ### Defining State
 
-```js title="Greeting.js"
+```jsx title="Greeting.js"
 import React, { useState } from 'react'
 
 function Greeting(){
@@ -55,7 +55,7 @@ function Greeting(){
 
 ### Changing State
 
-```js title="Greeting.js"
+```jsx title="Greeting.js"
 import React, { useState } from 'react'
 
 function Greeting(){
@@ -88,7 +88,7 @@ function Greeting(){
 
 - React.Component class has props object as a property
 
-```js title="Greeting.js"
+```jsx title="Greeting.js"
 import React from 'react'
 
 class Greeting extends React.Component{
@@ -120,7 +120,7 @@ class Greeting extends React.Component{
 
 ### Changing State
 
-```js title="Greeting.js"
+```jsx title="Greeting.js"
 ...
 
 capitalizeMessage() {
@@ -147,7 +147,7 @@ Source : [Codevolution Youtube](https://youtu.be/uirRaVjRsf4?t=554)
 - Changing state without using ```setState``` does NOT re-render the component.
 - In the below code count increments are logged to console correctly but since component won't render, count is always shown as 0 in the browser view
 
-```js title="Counter.js"
+```jsx title="Counter.js"
 import React, { useState } from 'react';
 
 const Counter = () => {
@@ -180,7 +180,7 @@ export default Counter
 - To ```doSomething()``` after ```setState``` is called, use callback function as second parameter of ```setState```.
 - In the below code when message is logged to the console it is not capitalized. This is because setState is called asynchronously and in this case will be called when user clicks capitalized button. But console log statement shows the value that was present before the change has occurred, as console log is not run in the asynchronous call to setState.
 
-```js title="Greeting.js"
+```jsx title="Greeting.js"
 ...
 
 capitalizeMessage() {
@@ -199,7 +199,7 @@ capitalizeMessage() {
 ...
 ```
 
-```js title="Greeting.js"
+```jsx title="Greeting.js"
 ...
 
 capitalizeMessage() {
@@ -236,7 +236,7 @@ capitalizeMessage() {
 - React groups state change functions for performance
 - In the below case both ```incrementCount()``` functions are grouped and called together which results in count increasing by only +1 instead of +2
 
-```js title="Counter.js"
+```jsx title="Counter.js"
 import React, { useState } from "react";
 
 const Counter = () => {
@@ -263,7 +263,7 @@ const Counter = () => {
 
 - In ```setCount()``` method, use a function to which current count value is passed as argument
 
-```js title="Counter.js"
+```jsx title="Counter.js"
 ...
 
 const incrementCount = () => {

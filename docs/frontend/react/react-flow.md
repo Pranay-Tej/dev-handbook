@@ -18,7 +18,7 @@ sidebar_label: Flow
   - Import React, ReactDOM
   - use ```ReactDOM.render(jsx or react_component, root_div)```
 
-```js title="index.js"
+```jsx title="index.js"
 import React from "react"
 import ReactDOM from "react-dom"
 

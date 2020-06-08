@@ -10,7 +10,7 @@ sidebar_label: Component Communication
 
 - Pass data from parent as ```props``` to children
 
-```js title="Parent.js"
+```jsx title="Parent.js"
 function Parent() {
     const [parent_data, setParent_data] = useState("");
 
@@ -35,7 +35,7 @@ function Parent() {
 
 - Read ```<input>``` in [Forms](react-forms)
 
-```js title="Child.js"
+```jsx title="Child.js"
 function Child(props) {
     const { userInput } = props;
 
@@ -57,7 +57,7 @@ function Child(props) {
 
 - Pass call back function from parent to child as props
 
-```js title="Parent.js"
+```jsx title="Parent.js"
 function Parent() {
     const [parent_data, setParent_data] = useState("");
 
@@ -76,7 +76,7 @@ function Parent() {
 }
 ```
 
-```js title="Child.js"
+```jsx title="Child.js"
 function Child(props) {
     const { handleParent_data } = props;
     // for reactive forms
@@ -105,7 +105,7 @@ function Child(props) {
 
 ## Sibling to Sibling through Parent
 
-```js title="Parent.js"
+```jsx title="Parent.js"
 function Parent() {
     const [sibling2_data, setSibling2_data] = useState("");
 
@@ -124,7 +124,7 @@ function Parent() {
 }
 ```
 
-```js title="Sibling1.js"
+```jsx title="Sibling1.js"
 function Sibling1(props) {
   const { handleSibling2Change } = props;
 
@@ -144,7 +144,7 @@ function Sibling1(props) {
 }
 ```
 
-```js title="Sibling2.js"
+```jsx title="Sibling2.js"
 function Sibling2(props) {
   const { dataFromSibling1 } = props;
 
@@ -174,7 +174,7 @@ function Sibling2(props) {
 - Install npm package &rarr; ```npm i eventemitter3```
 - Create emitter.js in services
 
-```js title="services/emitter.js"
+```jsx title="services/emitter.js"
 import EventEmitter from 'eventemitter3'
 
 const eventEmitter = new EventEmitter();
