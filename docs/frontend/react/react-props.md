@@ -4,12 +4,17 @@ title: Props
 sidebar_label: Props
 ---
 
+## Contents <!-- omit in toc -->
+
+- [Definition](#definition)
+- [Usage in Functional Components](#usage-in-functional-components)
+
 ## Definition
 
 - props (Properties) is data that component receives from parent
 - The component doesn't own the data and hence cannot be changed
 
-## Use in Functional Components
+## Usage in Functional Components
 
 ```js title="Welcome.js"
 import React from 'react'
@@ -41,7 +46,9 @@ function Greeting(props){
     // use 'user' property of 'props' object
     const user = props.user
 
-    // OR use JavaScript destructuring
+    // OR
+
+    // use JavaScript destructuring
     const { user } = props
 
     return(
@@ -52,7 +59,21 @@ function Greeting(props){
 }
 ```
 
-## Use in Class-based Components
+## Usage in Class-based Components
+
+```js title="Welcome.js"
+import React from 'react'
+
+class Welcome extends React.Component{
+    render(){
+        return(
+            <div>
+                <Greeting user="user_001" />
+            </div>
+        )
+    }
+}
+```
 
 - React.Component class has props object as a property
 
@@ -66,7 +87,9 @@ class Greeting extends React.Component{
         // use 'user' property of 'props' object
         const user = this.props.user
 
-        // OR use JavaScript destructuring
+        // OR
+
+        // use JavaScript destructuring
         const { user } = this.props
 
         return (
@@ -75,5 +98,55 @@ class Greeting extends React.Component{
             </div>
         )
     }
+}
+```
+
+## Render Children
+
+- To pass dynamic html content in components
+- Use ```{ props.children }``` to render children in the DOM tree of component
+
+```js title="App.js"
+function App(){
+    return(
+        <div>
+
+            // self closing tag with no children
+            <Greeting user="user_001" />
+
+            <Greeting user="user_002">
+                <p>User2 info</p>
+            </Greeting>
+
+            <Greeting user="user_003">
+                <button>
+                    User 3 Button
+                </button>
+            </Greeting>
+        </div>
+    )
+}
+```
+
+```js title="Greeting.js"
+import React from 'react'
+
+function Greeting(props){
+
+    // use 'user' property of 'props' object
+    const user = props.user
+
+    // OR
+
+    // use JavaScript destructuring
+    const { user } = props
+
+    return(
+        <div>
+            <p>Welcome {user}!</p>
+            // load whatever html is present as children
+            {props.children}
+        </div>
+    )
 }
 ```

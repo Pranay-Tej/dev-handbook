@@ -22,6 +22,10 @@ cd example
 npm start
 ```
 
+- VS Code
+  - ES React Snippets Extension
+  - type ```rfce``` for functional component boilerplate snippet
+
 ## Checklist
 
 - [Folder Structure](react-folder-structure)
@@ -31,7 +35,7 @@ npm start
   - Class-based
   - Functional
 - [Props](react-props)
-- State
+- [State](react-state)
 - Component Communication
 - Styles
 - Conditional Render
