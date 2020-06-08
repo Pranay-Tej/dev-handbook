@@ -75,7 +75,8 @@ module.exports = {
                     "frontend/react/react-flow",
                     "frontend/react/react-components",
                     "frontend/react/react-props",
-                    "frontend/react/react-state"
+                    "frontend/react/react-state",
+                    "frontend/react/react-component-communication"
                 ],
             },
             {

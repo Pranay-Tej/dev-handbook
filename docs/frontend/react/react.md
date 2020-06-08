@@ -36,7 +36,7 @@ npm start
   - Functional
 - [Props](react-props)
 - [State](react-state)
-- Component Communication
+- [Component Communication](react-component-communication)
 - Styles
 - Conditional Render
 - Lists Render
