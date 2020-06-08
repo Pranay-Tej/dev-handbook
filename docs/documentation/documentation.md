@@ -59,7 +59,7 @@ sidebar_label: Documentation Tools
 
 - Sidebar Configuration
 
-    ```js sidebar.js
+    ```js title="sidebar.js"
     {
       type: "category",
       label: "Frontend",
@@ -95,26 +95,24 @@ sidebar_label: Documentation Tools
 - Searchbar
   - [docusaurus-lunr-search](https://github.com/lelouch77/docusaurus-lunr-search)
   
-  ```bash title="project_folder"
-  npm i docusaurus-lunr-search  --save
-  npm run swizzle docusaurus-lunr-search SearchBar
+```bash title="project_folder"
+npm i docusaurus-lunr-search  --save
+npm run swizzle docusaurus-lunr-search SearchBar
+```
 
-  ```
-  
-  ```js title="docusaurus.config.js"
-    module.exports = {
-    // ...
-    plugins: [
-      'docusaurus-lunr-search'
-    ]
-  }
-  ```
-  
-  ```bash title="project_folder"
-  npm run build
-  npx http-server ./build
+```js title="docusaurus.config.js"
+module.exports = {
+// ...
+plugins: [
+  'docusaurus-lunr-search'
+]
+}
+```
 
-  ```
+```bash title="project_folder"
+npm run build
+npx http-server ./build
+```
 
 :::note
 :::
