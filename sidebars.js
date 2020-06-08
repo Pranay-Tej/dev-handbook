@@ -114,7 +114,10 @@ module.exports = {
             {
                 type: "category",
                 label: "Express",
-                items: ["backend/express/express"]
+                items: [
+                    "backend/express/express",
+                    "backend/express/express-hello-world",
+                ]
             },
             {
                 type: "category",

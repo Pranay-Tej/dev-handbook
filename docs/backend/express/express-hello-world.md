@@ -4,6 +4,8 @@ title: Hello World
 sidebar_label: Hello World
 ---
 
+- Create app.js
+
 ```js title="app.js"
 const express = require('express');
 
@@ -15,3 +17,6 @@ app.get('/', (req,res) => {
 
 app.listen(3000);
 ```
+
+- ```npm run start```
+- Go to ```localhost:8080/3000``` in browser or Postman
