@@ -6,6 +6,13 @@ sidebar_label: Component Communication
 
 ## Contents<!-- omit in toc -->
 
+- [Source](#source)
+- [Parent to Child](#parent-to-child)
+- [Child to Parent](#child-to-parent)
+- [Sibling to Sibling through Parent](#sibling-to-sibling-through-parent)
+
+## [Source](https://www.javascriptstuff.com/component-communication/)
+
 ## Parent to Child
 
 - Pass data from parent as ```props``` to children
@@ -192,7 +199,7 @@ export default Emitter;
 ```
 
 ```jsx title="Parent.js"
-function ParentD() {
+function Parent() {
     return (
         <div>
             <p>Case D: Without parent-child interaction</p>
