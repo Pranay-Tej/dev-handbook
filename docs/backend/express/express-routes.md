@@ -1,7 +1,7 @@
 ---
 id: express-routes
-title: Express Routes
-sidebar_label: Express Routes
+title: Routes
+sidebar_label: Routes
 ---
 
 ## Routes
