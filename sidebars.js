@@ -118,6 +118,7 @@ module.exports = {
                 items: [
                     "backend/express/express",
                     "backend/express/express-hello-world",
+                    "backend/express/express-routes",
                 ]
             },
             {
