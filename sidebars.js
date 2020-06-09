@@ -120,6 +120,7 @@ module.exports = {
                     "backend/express/express-hello-world",
                     "backend/express/express-routes",
                     "backend/express/express-requests",
+                    "backend/express/express-mongo",
                 ]
             },
             {
