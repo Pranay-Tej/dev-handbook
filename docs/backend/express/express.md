@@ -8,6 +8,7 @@ sidebar_label: Express
 
 - [Mosh YouTube](https://www.youtube.com/watch?v=pKd0Rpw7O48)
 - [DevEd YouTube](https://www.youtube.com/watch?v=vjf774RKrLc)
+- [Traversy YouTube](https://www.youtube.com/watch?v=L72fhGm1tfE)
 
 ## Setup
 
@@ -59,3 +60,5 @@ sidebar_label: Express
 - [Routes](express-routes)
 - [Requests](express-requests)
 - [Working with MongoDB](express-mongo)
+- [Environment Variables](express-env)
+- Deployment
