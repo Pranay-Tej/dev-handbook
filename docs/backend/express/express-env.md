@@ -6,11 +6,13 @@ sidebar_label: Environment Variables
 
 ## dotenv
 
+- Guide [Medium Article](https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786)
+
 - Install ```npm i dotenv```
 - Create a file ```.env``` in root directory
 
 ```txt title=".env"
-MONGO_URI = mongodb://localhost:27017/express-demo
+MONGO_URI=mongodb://localhost:27017/express-demo
 ```
 
 - Add .env to ```.gitignore```
