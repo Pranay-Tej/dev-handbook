@@ -20,19 +20,30 @@ sidebar_label: Express
 - Go to the folder ```cd express-demo```
 - ```npm init --yes``` &rarr; creates ```package.json```
 - ```npm i express``` &rarr; Install express
-- ```npm i nodemon``` &rarr; Install nodemon &rarr; reloads application on changes
+- ```npm i -D nodemon``` &rarr; Install nodemon as devDependency &rarr; nodemon reloads application on changes to the code
 - Create ```app.js``` in root directory
-- Add script to run app.js ```package.json```
+- Add script to run app.js in ```package.json```
 
 ```js title="package.json"
 {
     "scripts": {
-        "start": "nodemon app.js",
+        "dev": "nodemon app.js",
+        "start" : "node app.js"
     },
 }
 ```
 
-- ```npm run start``` &rarr; Run app
+- ```npm run dev``` Run app in development mode
+- ```npm run start``` &rarr; Run app in production mode
+
+#### Express Generator Setup
+
+- Install node
+- Create folder ```express-demo```
+- Go to the folder ```cd express-demo```
+- ```npx express-generator``` &rarr; Create boilerplate code
+- ```npm install``` &rarr; Install dependencies
+- ```npm start``` &rarr; Start application
 
 #### Express CLI Setup
 
