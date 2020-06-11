@@ -25,9 +25,11 @@ app.get('/articles', (req,res) => {
 ```js title="app.js"
 
 // Middleware
-app.use('/users',() => {
-    console.log('Users middleware running!')
-})
+app.use("/users", (req, res, next) => {
+    console.log("Users middleware running");
+    // next() method goes to app.get('/users')
+    next();
+});
 
 // Routes
 app.get('/users', (req,res) => {

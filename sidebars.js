@@ -119,6 +119,7 @@ module.exports = {
                     "backend/express/express",
                     "backend/express/express-hello-world",
                     "backend/express/express-routes",
+                    "backend/express/express-static",
                     "backend/express/express-requests",
                     "backend/express/express-mongo",
                     "backend/express/express-env",

@@ -59,6 +59,7 @@ sidebar_label: Express
 - [Hello World](express-hello-world)
 - [Routes](express-routes)
 - [Requests](express-requests)
+- [Serve Static Pages](express-static)
 - [Working with MongoDB](express-mongo)
 - [Environment Variables](express-env)
 - Deployment

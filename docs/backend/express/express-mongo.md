@@ -45,10 +45,12 @@ module.exports = mongoose.model("Article", ArticleSchema);
 
 ### Save data to database
 
-- To deal with json objects add middleware to app.js
+- To deal with json and forms add middleware to app.js
   
 ```js title="app.js"
 app.use(express.json())
+
+app.use(express.urlencoded({ extended: false }));
 ```
 
 - Add post request route to ```routes/article.js```
