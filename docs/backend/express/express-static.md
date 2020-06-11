@@ -20,5 +20,5 @@ app.use('/static',express.static(path.join(__dirname, 'public')))
 // OR
 // for complete static site
 
-app.use('',express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public')))
 ```
