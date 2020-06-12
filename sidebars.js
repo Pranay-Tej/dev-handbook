@@ -78,6 +78,7 @@ module.exports = {
                     "frontend/react/react-state",
                     "frontend/react/react-component-communication",
                     "frontend/react/react-conditional-render",
+                    "frontend/react/react-lists",
                 ],
             },
             {

@@ -39,7 +39,7 @@ npm start
 - [Component Communication](react-component-communication)
 - Styles
 - [Conditional Render](react-conditional-render)
-- Lists Render
+- [Lists](react-lists)
 - LifeCycle Methods
 - EventHandling
 - Forms
