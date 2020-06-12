@@ -140,7 +140,11 @@ module.exports = {
             {
                 type: "category",
                 label: "MongoDB",
-                items: ["db/mongo/mongo"]
+                items: [
+                    "db/mongo/mongo",
+                    "db/mongo/mongo-atlas",
+                    "db/mongo/mongo-queries",
+                ]
             }
         ],
     },

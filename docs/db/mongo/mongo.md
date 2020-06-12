@@ -4,6 +4,11 @@ title: MongoDB
 sidebar_label: MongoDB
 ---
 
+## Courses
+
+- MongoDB University
+  - [M001 Basics](https://university.mongodb.com/courses/M001/about)
+
 ## Setup
 
 ### Linux
@@ -16,3 +21,16 @@ sidebar_label: MongoDB
 - ```use [db_name]``` use a db
 - ```show collections``` show collections of a db
 - ```db.[collection_name].find().pretty()``` show items in collection
+
+### VS Code
+
+- Install MongoDB for VSCode
+
+### MongoDB Compass
+
+- GUI for MongoDB
+
+## Checklist
+
+- [Atlas](mongo-atlas)
+- [Queries](mongo-queries)
