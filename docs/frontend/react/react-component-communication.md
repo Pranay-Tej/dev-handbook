@@ -180,6 +180,8 @@ function Sibling2(props) {
 )
 - Install npm package &rarr; ```npm i eventemitter3```
 - Create emitter.js in services
+- Register all events in Emitter to easily manage all events in a single centralized place
+- Components should emit or subscribe to registered events only
 
 ```jsx title="services/emitter.js"
 import EventEmitter from 'eventemitter3'
@@ -187,15 +189,30 @@ import EventEmitter from 'eventemitter3'
 const eventEmitter = new EventEmitter();
 
 const Emitter = {
-  on: (event, fn) => eventEmitter.on(event, fn),
-  once: (event, fn) => eventEmitter.once(event, fn),
-  off: (event, fn) => eventEmitter.off(event, fn),
-  emit: (event, payload) => eventEmitter.emit(event, payload)
-}
+    on: (event, fn) => eventEmitter.on(event.id, fn),
+    once: (event, fn) => eventEmitter.once(event.id, fn),
+    off: (event, fn) => eventEmitter.off(event.id, fn),
+    emit: (event, payload) => eventEmitter.emit(event.id, payload),
+};
 
 Object.freeze(Emitter);
 
-export default Emitter;
+//  centralized place for all events
+
+const events = {
+    dataFromChild1ToChild2: {
+      id: "dataFromChild1ToChild2",
+      info: "user input from Child1"
+    },
+    confirmationFromChild2 : {
+      id: "confirmationFromChild2",
+      info: "confirmation from Child1"
+    }
+};
+
+Object.freeze(events);
+
+export { events, Emitter };
 ```
 
 ```jsx title="Parent.js"
@@ -211,19 +228,31 @@ function Parent() {
 }
 ```
 
-- Emit data from Child1
+- Emit event and data from Child1
 
 ```jsx title="Child1.js"
-import Emitter from "/services/emitter";
+import { Emitter, events } from "../../../services/emitter";
 
 function Child1() {
     const [child1_data, setChild1_data] = useState("");
+
+    useEffect(() => {
+        // subscribing
+        Emitter.on(events.confirmationFromChild2, () =>
+            console.log("Confirmation received")
+        );
+
+        return () => {
+            // unsubscribing on unmount
+            Emitter.off(events.confirmationFromChild2);
+        };
+    }, []);
 
     const handleChange = (event) => {
         setChild1_data(event.target.value);
 
         // emitting data on change
-        Emitter.emit("dataFromChild1ToChild2", event.target.value);
+        Emitter.emit(events.dataFromChild1ToChild2, event.target.value);
     };
 
     return (
@@ -238,7 +267,7 @@ function Child1() {
 - Subscribe for the event in Child2
 
 ```jsx title="Child2.js"
-import Emitter from "/services/emitter";
+import {Emitter, events} from "../../../services/emitter";
 
 function Child2() {
     const [childD2_data, setChildD2_data] = useState("");
@@ -246,13 +275,14 @@ function Child2() {
     useEffect(() => {
 
         // subscribing
-        Emitter.on('dataFromChild1ToChild2', (data) => {
+        Emitter.on(events.dataFromChild1ToChild2, (data) => {
             setChildD2_data(data);
+            Emitter.emit(events.confirmationFromChild2);
         });
 
         return () => {
             // unsubscribing on unmount
-            Emitter.off('dataFromChild1ToChild2')
+            Emitter.off(events.dataFromChild1ToChild2)
         }
     }, []);
 
