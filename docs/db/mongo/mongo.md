@@ -33,4 +33,5 @@ sidebar_label: MongoDB
 ## Checklist
 
 - [Atlas](mongo-atlas)
+- [Basics](mongo-basics)
 - [Queries](mongo-queries)

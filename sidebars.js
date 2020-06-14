@@ -144,6 +144,7 @@ module.exports = {
                 items: [
                     "db/mongo/mongo",
                     "db/mongo/mongo-atlas",
+                    "db/mongo/mongo-basics",
                     "db/mongo/mongo-queries",
                 ]
             }
