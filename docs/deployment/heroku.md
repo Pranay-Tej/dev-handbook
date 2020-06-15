@@ -35,38 +35,71 @@ git push heroku-frontend frontend-only:master
 
 ## Angular
 
+### Using Express server
+
 - [Reference](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147)
 - `ng build --aot --prod`
 - `enhanced resolve` not necessary
 
-## React
+### Using serve
 
-- install serve from npm
+- Install serve from npm
 
-    ```bash title="project_folder"
-    npm install serve
-    ```
+```bash title="project_folder"
+npm install serve
+```
 
-- change `scripts` in `package.json`
+- Change `scripts` in `package.json`
 
-    ```js title="package.json"
-    "scripts": {
-        "dev": "react-scripts start",
-        "start": "serve -s build",
-        ...
-    },
-    ```
+```js title="package.json"
+"scripts": {
+    "dev": "ng serve",
+    "start": "serve -s dist/project_name",
+    "heroku-postbuild": "ng build --aot --prod"
+},
+```
 
 - now use
   - `npm run dev` for development mode
   - `npm run build` then `npm run start` for production mode
 - add `engines` for consistent environment
 
-    ```js title="package.json"
-    "engines": {
-        "node": "12.16.2",
-        "npm": "6.14.4"
-    }
-    ```
+```js title="package.json"
+"engines": {
+    "node": "12.16.2",
+    "npm": "6.14.4"
+}
+```
 
-- ```git push heroku master```
+- ```git push heroku master``` to push to heroku
+
+## React
+
+- Install serve from npm
+
+```bash title="project_folder"
+npm install serve
+```
+
+- Change `scripts` in `package.json`
+
+```js title="package.json"
+"scripts": {
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+},
+```
+
+- Now use
+  - `npm run dev` for development mode
+  - `npm run build` then `npm run start` for production mode
+- add `engines` for consistent environment
+
+```js title="package.json"
+"engines": {
+    "node": "12.16.2",
+    "npm": "6.14.4"
+}
+```
+
+- ```git push heroku master``` to push to heroku

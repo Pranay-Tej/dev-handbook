@@ -61,5 +61,5 @@ sidebar_label: Angular
   - docker-compose
 - Forms Module
 - Deployment
-  - Heroku
+  - [Heroku](../../deployment/heroku#angular)
 - [Angular Material](angular-material)
