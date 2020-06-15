@@ -16,6 +16,9 @@ sidebar_label: Data Binding
   - [Useful event bindings](#useful-event-bindings)
 - [Two-Way Binding](#two-way-binding)
   - [```ngModel```](#ngmodel)
+- [Examples](#examples)
+  - [Capitalize UserInput in the textbox](#capitalize-userinput-in-the-textbox)
+  - [Show button pressed by the user](#show-button-pressed-by-the-user)
 
 ## Definition
 
@@ -117,6 +120,18 @@ name : string;
 ```
 
 ### ```ngModel```
+
+- Import ```FormsModule``` to use ```ngModel```
+
+```ts title="AppModule"
+import { FormsModule } from '@angular/forms'
+
+@NgModule({
+   imports: [
+      FormsModule,
+   ],
+})
+```
 
 ```[(ngModel)] = "name``` is equivalent to ```[ngModel] = "name"``` + ```(ngModelChange) = "name = $event"```
 

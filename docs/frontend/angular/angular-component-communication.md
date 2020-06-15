@@ -9,6 +9,7 @@ sidebar_label: Component Communication
 - [Using Parent-Child Interaction](#using-parent-child-interaction)
   - [Parent to Child](#parent-to-child)
 - [Passing reference of component to others](#passing-reference-of-component-to-others)
+- [Using eventemitter3 from npm](#using-eventemitter3-from-npm)
 
 ## Using Parent-Child Interaction
 
@@ -118,3 +119,104 @@ ngOnInit(){
 ```
 
 ## Passing reference of component to others
+
+TODO
+
+## Using eventemitter3 from npm
+
+- Install EventEmitter3 &rarr; ```npm i eventemitter3```
+- Create a service &rarr; ```EmitterService```
+- Create an interface for events
+- Register all events in a single centralized place ```events``` to manage easily
+- Components should emit or subscribe to registered events only
+
+```ts title="EmitterService"
+import { Injectable } from "@angular/core";
+
+import { EventEmitter } from "eventemitter3";
+
+// Interface for events
+interface Event {
+    id: string;
+    info: string;
+}
+
+@Injectable({
+    providedIn: "root",
+})
+export class EmitterService {
+
+    private eventEmitter = new EventEmitter();
+
+    on = (event: Event, fn) => this.eventEmitter.on(event.id, fn);
+    once = (event: Event, fn) => this.eventEmitter.once(event.id, fn);
+    off = (event: Event, fn) => this.eventEmitter.off(event.id, fn);
+    emit = (event: Event, payload?) =>
+        this.eventEmitter.emit(event.id, payload);
+
+    events = {
+        dataFromWingA: {
+            id: "dataFromWingA",
+            info: "wingA sends data to wingB",
+        },
+        confirmationFromWingB: {
+            id: "confirmationFromWingB",
+            info: "wingB sends confirmation",
+        },
+    };
+
+    constructor() {}
+}
+```
+
+- Inject EmitterService and publish events
+
+```html title="WingA.HTML"
+<input type="text" [ngModel]="user_input" (ngModelChange)="sendUserInput($event)" />
+```
+
+```ts title="WingA.TS"
+user_input: String;
+
+sendUserInput(input: string) {
+    this.emitterService.emit(
+        this.emitterService.events.dataFromWingA,
+        input
+    );
+}
+
+constructor(private emitterService: EmitterService) {}
+
+ngOnInit() {
+    this.emitterService.on(
+        this.emitterService.events.confirmationFromWingB,
+        () => console.log("OK")
+    );
+}
+```
+
+- Inject and subscribe to events
+
+```html title="WingB.HTML"
+<p>
+  {{ data_from_WingA }}
+</p>
+```
+
+```ts title="WingB.TS"
+data_from_WingA: String;
+
+constructor(private emitterService: EmitterService) {}
+
+ngOnInit() {
+    this.emitterService.on(
+        this.emitterService.events.dataFromWingA,
+        (payload) => {
+            this.emitterService.emit(
+                this.emitterService.events.confirmationFromWingB
+            );
+            this.data_from_WingA = payload;
+        }
+    );
+}
+```
