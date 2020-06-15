@@ -62,4 +62,4 @@ sidebar_label: Express
 - [Serve Static Pages](express-static)
 - [Working with MongoDB](express-mongo)
 - [Environment Variables](express-env)
-- Deployment
+- [Deployment](../../deployment/heroku#express)
