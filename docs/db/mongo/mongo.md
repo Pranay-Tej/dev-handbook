@@ -36,3 +36,4 @@ sidebar_label: MongoDB
 - [Basics](mongo-basics)
 - [Create](mongo-create)
 - [Read](mongo-read)
+- [Update](mongo-update)
