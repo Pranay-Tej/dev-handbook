@@ -145,7 +145,8 @@ module.exports = {
                     "db/mongo/mongo",
                     "db/mongo/mongo-atlas",
                     "db/mongo/mongo-basics",
-                    "db/mongo/mongo-queries",
+                    "db/mongo/mongo-create",
+                    "db/mongo/mongo-read",
                 ]
             }
         ],

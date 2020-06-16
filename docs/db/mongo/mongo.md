@@ -34,4 +34,5 @@ sidebar_label: MongoDB
 
 - [Atlas](mongo-atlas)
 - [Basics](mongo-basics)
-- [Queries](mongo-queries)
+- [Create](mongo-create)
+- [Read](mongo-read)

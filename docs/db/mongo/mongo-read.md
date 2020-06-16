@@ -1,94 +1,20 @@
 ---
-id: mongo-queries
-title: Queries
-sidebar_label: Queries
+id: mongo-read
+title: Read
+sidebar_label: Read
 ---
 
-## Contents <!-- omit in toc -->
+## ```find()```
 
-- [Create/Insert Document](#createinsert-document)
-  - [```insertOne()```](#insertone)
-  - [```insertMany()```](#insertmany)
-- [Read](#read)
-  - [```find()```](#find)
-  - [Embedded/Nested documents](#embeddednested-documents)
-  - [Array Fields](#array-fields)
-    - [Exact match](#exact-match)
-    - [Filter for single element](#filter-for-single-element)
-    - [Filter along with position/index](#filter-along-with-positionindex)
-- [Cursors](#cursors)
-- [Projections](#projections)
-  - [Include only specific fields](#include-only-specific-fields)
-
-## Create/Insert Document
-
-### ```insertOne()```
-
-Compass
-
-- Click ```Insert Document``` button in Compass &rarr; Collection &rarr; Documents Tab
-- Enter key value pairs
-- Click ```Insert```
-
-Shell
-
-- Use ```db.collection_name.insertOne(document_json)```
+- ```find()``` function is used to fetch documents
 
 ```bash
-mongo
-
-show dbs
-
-use db_name
-
-show collections
-
-db.collection_name.insertOne({ title: "God of War", platform: "PS4", rating: 10})
+db.collection_name.find()
 ```
 
-:::note
-:::
-**NOTE:** ```_id``` field is inserted automatically by MongoDB. By default it is of type ```ObjectID```.
+- Without any arguments, ```find()``` fetches all documents in the collection
 
-**TIP:** Use _id of single type for a given collection
-
-### ```insertMany()```
-
-- Use ```db.collection_name.insertMany(array_of_document_jsons)```
-
-```bash
-db.collection_name.insertMany(
-    [
-        { title: "God of War", platform: "PS4", rating: 10},
-        { title: "The Last of Us", platform: "PS4", rating: 10}
-    ]
-)
-```
-
-- Will raise ERROR if two of the documents have same ```_id``` value and stops inserting at ERROR document location
-- Pass ```options``` as second argument
-
-```bash
-db.collection_name.insertMany(
-    [
-        { title: "God of War", platform: "PS4", rating: 10},
-        { title: "The Last of Us", platform: "PS4", rating: 10}
-    ],
-    {
-        "ordered": false
-    }
-)
-```
-
-- Now all other documents are inserted except for the ones which result in ERRORs
-
----
-
-## Read
-
-### ```find()```
-
-Single Selector
+## Single Selector
 
 - Use ```find(equality_filter)``` to find documents
 
@@ -102,7 +28,7 @@ db.games.find({ platform: "PS4" })
 :::
 **NOTE:** Use ```pretty()``` to view results in json format. Example: ```db.collection_name.find(equality_filter).pretty()```
 
-Multiple selectors
+## Multiple selectors
 
 ```bash
 db.games.find({ platform: "PS4", year: 2018 })
@@ -114,7 +40,7 @@ db.games.find({ platform: "PS4", year: 2018 })
 :::
 **NOTE:** By default multiple selectors are filtered by ```AND``` logic
 
-### Embedded/Nested documents
+## Embedded/Nested documents
 
 ```js
 {
@@ -148,7 +74,7 @@ db.games.find({ "ratings.ign": 10 })
 :::
 **TIP:** Use ```.count()``` to find number of filter documents. Example: ```db.collection_name.find(equality_filter).count()```
 
-### Array Fields
+## Array Fields
 
 ```js
 {
@@ -158,7 +84,7 @@ db.games.find({ "ratings.ign": 10 })
 }
 ```
 
-#### Exact match
+### Exact match
 
 - Pass array in selector to find the documents which have EXACT match in elements AND their order
 
@@ -168,7 +94,7 @@ db.games.find({ cast: ["Troy Baker", "Ashley Johnson"] })
 
 - Returns documents which have ```cast = ["Troy Baker", "Ashley Johnson"]```
 
-#### Filter for single element
+### Filter for single element
 
 - Find value in selector to find documents which have the passed filter in the array
 
@@ -178,7 +104,7 @@ db.games.find({ cast: "Troy Baker" })
 
 - Returns documents which have the "Troy Baker" as one of the cast members. There may be other members as well in the array
 
-#### Filter along with position/index
+### Filter along with position/index
 
 ```bash
 db.games.find({ "cast.0": "Troy Baker" })
