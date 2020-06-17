@@ -192,8 +192,14 @@ module.exports = {
         label: "Deployment",
         items: [
             {
-                type: "doc",
-                id: "deployment/heroku",
+                type: "category",
+                label: "Heroku",
+                items: ["deployment/heroku"],
+            },
+            {
+                type: "category",
+                label: "Vercel",
+                items: ["deployment/vercel"],
             },
         ],
     },

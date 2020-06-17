@@ -155,7 +155,7 @@ themeConfig: {
 #### Zeit
 
 - Create account
-- Connect Git repository
+- Connect Git repository from GitHub, GitLab or BitBucket
 
 #### Netlify
 
