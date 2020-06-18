@@ -26,6 +26,8 @@ git push heroku-frontend frontend-only:master
 
 ## GitLab CI
 
+- [Article](https://medium.com/swlh/how-do-i-deploy-my-code-to-heroku-using-gitlab-ci-cd-6a232b6be2e4)
+- Add Tokens in GitLab CI Environment Variables
 - Reference
 
 ```bash title=".gitlab-ci.yml"

@@ -11,6 +11,11 @@ sidebar_label: Vercel
 - Vue
 - Static sites
 
+Vercel Conditions
+
+- [Usage Policy](https://vercel.com/docs/v2/platform/fair-use-policy)
+- [Limits](https://vercel.com/docs/v2/platform/limits)
+
 ## Git
 
 - Create account
@@ -52,14 +57,53 @@ vercel [frontend_folder_location] --confirm --name=[vercel_project_name]
 vercel [frontend_folder_location] -c -n [vercel_project_name] --token=TOKEN
 ```
 
+- For production mode
+
+```bash
+vercel [frontend_folder_location] -c -n [vercel_project_name] --token=TOKEN --prod
+```
+
 - Short version
 
 ```bash
-vercel [frontend_folder_location] -c -n [vercel_project_name] -t TOKEN
+vercel [frontend_folder_location] -c -n [vercel_project_name] -t TOKEN --prod
 ```
 
 - Example
 
 ```bash
-vercel [frontend/react-ui/user-ui/] -c -n [react-example] -t TOKEN
+vercel [frontend/react-ui/user-ui/] -c -n [react-example] -t TOKEN --prod
+```
+
+---
+
+## Angular
+
+- Change ```build``` script to production mode in ```package.json```
+
+```js
+"build": "ng build --aot --prod"
+```
+
+---
+
+## GitLab CI
+
+- Add Vercel Token in GitLab CI Environment Variables
+
+```bash
+image: node
+
+before_script:
+  - npm i -g vercel
+
+stages:
+  - deploy-frontend
+
+vercel_deploy-react-ui:
+  stage: deploy-frontend
+  script:
+    - vercel react-ui/user-ui/ --confirm --name=react-deploy-test --token=$ZEIT_TOKEN --prod
+  only:
+    - master
 ```
