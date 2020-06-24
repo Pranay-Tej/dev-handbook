@@ -174,21 +174,6 @@ module.exports = {
     },
     {
         type: "category",
-        label: "Devops",
-        items: [
-            // {
-            //     type: "doc",
-            //     id: "devops/devops",
-            // },
-            {
-                type: "category",
-                label: "Docker",
-                items: ["devops/docker/docker"],
-            },
-        ],
-    },
-    {
-        type: "category",
         label: "Deployment",
         items: [
             {
@@ -200,6 +185,26 @@ module.exports = {
                 type: "category",
                 label: "Vercel",
                 items: ["deployment/vercel"],
+            },
+            {
+                type: "category",
+                label: "Firebase",
+                items: ["deployment/firebase"],
+            },
+        ],
+    },
+    {
+        type: "category",
+        label: "Devops",
+        items: [
+            // {
+            //     type: "doc",
+            //     id: "devops/devops",
+            // },
+            {
+                type: "category",
+                label: "Docker",
+                items: ["devops/docker/docker"],
             },
         ],
     },
