@@ -28,6 +28,9 @@ sidebar_label: CSS
 
 ## Responsive Design
 
+- [Article](https://medium.com/better-programming/responsive-web-design-26e6f6213335)
+- [freecodecamp YouTube video](https://www.youtube.com/watch?v=srvUrASNj0s)
+
 ### CSS Units
 
 Absolute
