@@ -4,6 +4,15 @@ title: Heroku
 sidebar_label: Heroku
 ---
 
+## Deal with app load time
+
+- Heroku free tier apps sleep after 30 minutes of inactivity
+- Create an endpoint to use for waking the backend
+- Add a loading screen to frontend and call the ```/wakeup``` endpoint
+- Load app home page after receiving response from endpoint
+
+---
+
 ## Push part of a project
 
 ### Git Subtree
@@ -23,6 +32,8 @@ git remote rename heroku heroku-frontend
 git subtree split --prefix=frontend/ -b frontend-only
 git push heroku-frontend frontend-only:master
 ```
+
+---
 
 ## GitLab CI
 
@@ -113,7 +124,7 @@ stages:
 # maven_test:
 #   image: maven:3-jdk-11
 #   stage: test
-#   tags: 
+#   tags:
 #     - immersive-runner-cgi
 #   script:
 #     - mvn clean testdev
@@ -177,12 +188,6 @@ heroku_deploy-react-ui:
 
 ## Angular
 
-### Using Express server
-
-- [Reference](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147)
-- `ng build --aot --prod`
-- `enhanced resolve` not necessary
-
 ### Using serve
 
 - Install serve from npm
@@ -214,6 +219,13 @@ npm install serve
 ```
 
 - ```git push heroku master``` to push to heroku
+
+### Using Express server
+
+- [Reference](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147)
+- `ng build --aot --prod`
+- `enhanced resolve` not necessary
+
 
 ---
 
