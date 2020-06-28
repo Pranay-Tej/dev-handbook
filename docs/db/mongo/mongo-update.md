@@ -210,3 +210,46 @@ updateOne(
 ## ```updateMany()```
 
 - Same as ```updateOne()```. But instead updating the first resulting document, ```updateMany()``` updates all resulting documents
+
+---
+
+## Upserts
+
+- Use third argument as ```{ upsert: true }``` to create a new document if it does not exist
+
+```bash
+db.games.updateOne(
+    {
+        title: "Horizon : Zero Dawn"
+    },
+    {
+        $set: {
+            _id: 30,
+            platform: "PS4"
+        }
+    },
+    {
+        upsert: true
+    }
+)
+```
+
+---
+
+## ```replaceOne()```
+
+- Sytanx - ```replaceOne(filter, replacement_document)```
+
+```bash
+let filter = { title : "Horizon : Zero Dawn"  }
+
+let doc = db.games.findOne(filter);
+
+doc.platform.push("PC");
+
+db.games.replaceOne(filter, doc);
+```
+
+:::note
+:::
+**NOTE:** Replacement document cannot contain update operators

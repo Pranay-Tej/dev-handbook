@@ -37,3 +37,4 @@ sidebar_label: MongoDB
 - [Create](mongo-create)
 - [Read](mongo-read)
 - [Update](mongo-update)
+- [Delete](mongo-delete)

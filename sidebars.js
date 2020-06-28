@@ -148,6 +148,7 @@ module.exports = {
                     "db/mongo/mongo-create",
                     "db/mongo/mongo-read",
                     "db/mongo/mongo-update",
+                    "db/mongo/mongo-delete",
                 ]
             }
         ],
