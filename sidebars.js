@@ -149,6 +149,7 @@ module.exports = {
                     "db/mongo/mongo-read",
                     "db/mongo/mongo-update",
                     "db/mongo/mongo-delete",
+                    "db/mongo/mongo-query-operators",
                 ]
             }
         ],

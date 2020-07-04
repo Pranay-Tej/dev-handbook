@@ -45,3 +45,4 @@ sidebar_label: Basics
 
 - Special keys with ```$``` sign are called as operators
 - Examples: ```$gte```, ```$and```
+- Read more in [Query Operators](mongo-query-operators)

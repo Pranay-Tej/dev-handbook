@@ -134,13 +134,14 @@ sidebar_label: Routing
 ## Router Outlet
 
 - Router Outlet will tell angular where to load the routed components in DOM Tree
+- Keep nav-bar and footer in all pages and change main page content according to route
+- Example: ```/account``` &rarr; Load AccountComponent in router-outlet position
 
 ```html title="HomeComponent.HTML"
+<nav></nav>
     <router-outlet>
-        <nav></nav>
-        <feed></feed>
-        <footer></footer>
     </router-outlet>
+<footer></footer>
 ```
 
 ## Navigation

@@ -38,3 +38,4 @@ sidebar_label: MongoDB
 - [Read](mongo-read)
 - [Update](mongo-update)
 - [Delete](mongo-delete)
+- [Query Operators](mongo-query-operators)
