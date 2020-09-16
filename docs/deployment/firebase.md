@@ -1,7 +1,7 @@
 ---
 id: firebase
 title: Firebase
-sidebar_label: Firebase
+sidebar_label: Overview
 ---
 
 ## Angular

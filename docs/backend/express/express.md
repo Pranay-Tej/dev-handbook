@@ -1,7 +1,7 @@
 ---
 id: express
 title: Express
-sidebar_label: Express
+sidebar_label: Overview
 ---
 
 ## Courses
@@ -54,7 +54,7 @@ sidebar_label: Express
 - ```npm install``` &rarr; install dependencies
 - ```npm start``` &rarr; run application
 
-## Checklist
+## Overview
 
 - [Hello World](express-hello-world)
 - [Routes](express-routes)

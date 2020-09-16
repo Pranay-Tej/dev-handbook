@@ -1,7 +1,7 @@
 ---
 id: algorithms
 title: Algorithms by Topic
-sidebar_label: Algorithms by Topic
+sidebar_label: Overview
 ---
 
 > [GFG Algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)

@@ -1,7 +1,7 @@
 ---
 id: mongo
 title: MongoDB
-sidebar_label: MongoDB
+sidebar_label: Overview
 ---
 
 ## Courses
@@ -30,7 +30,7 @@ sidebar_label: MongoDB
 
 - GUI for MongoDB
 
-## Checklist
+## Overview
 
 - [Atlas](mongo-atlas)
 - [Basics](mongo-basics)

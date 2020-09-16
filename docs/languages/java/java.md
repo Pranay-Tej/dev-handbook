@@ -1,13 +1,13 @@
 ---
 id: java
 title: Java
-sidebar_label: Java
+sidebar_label: Overview
 ---
 
 ## Courses
 
 - [GFG Fork Java](https://practice.geeksforgeeks.org/courses/fork-java)
-- [Sololearn](https://www.sololearn.com/Course/Java/)
+- [SoloLearn](https://www.sololearn.com/Course/Java/)
 
 ## Setup
 

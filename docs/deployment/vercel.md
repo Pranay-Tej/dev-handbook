@@ -1,7 +1,7 @@
 ---
 id: vercel
 title: Vercel (Zeit)
-sidebar_label: Vercel
+sidebar_label: Overview
 ---
 
 ## Host Front-end apps

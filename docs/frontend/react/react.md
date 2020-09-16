@@ -1,7 +1,7 @@
 ---
 id: react
 title: React
-sidebar_label: React
+sidebar_label: Overview
 ---
 
 ## Courses
@@ -26,7 +26,7 @@ npm start
   - ES React Snippets Extension
   - type ```rfce``` for functional component boilerplate snippet
 
-## Checklist
+## Overview
 
 - [Folder Structure](react-folder-structure)
 - [Flow](react-flow)

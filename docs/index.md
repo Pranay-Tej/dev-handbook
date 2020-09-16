@@ -8,7 +8,7 @@ sidebar_label: Index
 
 ### Languages
 
-- [CPP](languages/c++/c++)
+- [CPP](languages/cpp/cpp)
 - [Java](languages/java/java)
 - Python
 
@@ -46,6 +46,7 @@ sidebar_label: Index
 
 - [Heroku](deployment/heroku)
 - [Vercel (Zeit)](deployment/vercel)
+- [Firebase](deployment/firebase)
 
 ### GameDev
 

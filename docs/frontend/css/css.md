@@ -1,7 +1,7 @@
 ---
 id: css
 title: CSS
-sidebar_label: CSS
+sidebar_label: Overview
 ---
 
 ## Intro
@@ -21,6 +21,31 @@ sidebar_label: CSS
 ## CSS Variables
 
 - [Scrimba](https://scrimba.com/course/gcssvariables)
+
+```css title="index.css"
+// Declaration
+
+:root{
+  --primary-color: #000000;
+  --secondary-color: rgb(32, 173, 56);
+
+  --primary-font-color: #ffffff;
+  --secondary-font-color: #000000;
+
+  --nav-bar-height: 3.8rem;
+}
+
+// Usage
+
+body{
+  color: var(--primary-font-color);
+}
+
+.navbar-item{
+  height: var(--nav-bar-height);
+  width: var(--nav-bar-height);
+}
+```
 
 ## UI Design Fundamentals
 

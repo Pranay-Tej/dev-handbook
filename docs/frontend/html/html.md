@@ -1,8 +1,12 @@
 ---
 id: html
 title: HTML
-sidebar_label: HTML
+sidebar_label: Overview
 ---
+
+## Courses
+
+- [SoloLearn](https://www.sololearn.com/Course/HTML/)
 
 ## HTML Symbols
 

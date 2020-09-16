@@ -1,7 +1,7 @@
 ---
 id: unity
 title: Unity
-sidebar_label: Unity
+sidebar_label: Overview
 ---
 
 ## Contents <!-- omit in toc -->
@@ -9,7 +9,7 @@ sidebar_label: Unity
 - [Courses](#courses)
   - [Unity](#unity)
   - [Brackeys](#brackeys)
-- [Topics](#topics)
+- [Overview](#overview)
   - [Setup](#setup)
   - [Git](#git)
   - [Tips](#tips)
@@ -49,7 +49,7 @@ sidebar_label: Unity
 
 - - -
 
-## Topics
+## Overview
 
 ### Setup
 
@@ -188,6 +188,8 @@ Visual Studio Code Setup
 ### Assets
 
 - Anima 2D
+
+---
 
 ## Terminology
 

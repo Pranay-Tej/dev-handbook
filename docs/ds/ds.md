@@ -1,7 +1,7 @@
 ---
 id: ds
 title: Data Structures
-sidebar_label: Data Structures
+sidebar_label: Overview
 ---
 
 > [GFG Data Structures](https://www.geeksforgeeks.org/data-structures/)

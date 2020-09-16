@@ -1,7 +1,7 @@
 ---
-id: c++
+id: cpp
 title: C++
-sidebar_label: C++
+sidebar_label: Overview
 ---
 
 ## Courses
@@ -45,7 +45,7 @@ sidebar_label: C++
     - SelectDefaultShell cmd
     - File Preferences Settings Users Extensions RunCodeConfiguration Enable RunInTerminal
 
-## Topics
+## Overview
 
 - Strings
     > [LeetCode Tutorial](https://leetcode.com/explore/learn/card/array-and-string/)

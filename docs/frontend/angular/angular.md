@@ -1,7 +1,7 @@
 ---
 id: angular
 title: Angular
-sidebar_label: Angular
+sidebar_label: Overview
 ---
 
 ## Courses
@@ -27,7 +27,7 @@ sidebar_label: Angular
 - Build ```ng build``` or ```ng build --dev``` or ```ng build --prod```
   - Builds application in ```dist``` folder
 
-## Checklist
+## Overview
 
 - [Folder Structure](angular-folder-structure)
 - [Flow](angular-flow)

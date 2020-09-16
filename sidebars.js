@@ -29,7 +29,7 @@ module.exports = {
             {
                 type: "category",
                 label: "C++",
-                items: ["languages/c++/c++"],
+                items: ["languages/cpp/cpp"],
             },
             {
                 type: "category",
@@ -68,21 +68,6 @@ module.exports = {
             },
             {
                 type: "category",
-                label: "React",
-                items: [
-                    "frontend/react/react",
-                    "frontend/react/react-folder-structure",
-                    "frontend/react/react-flow",
-                    "frontend/react/react-components",
-                    "frontend/react/react-props",
-                    "frontend/react/react-state",
-                    "frontend/react/react-component-communication",
-                    "frontend/react/react-conditional-render",
-                    "frontend/react/react-lists",
-                ],
-            },
-            {
-                type: "category",
                 label: "Angular",
                 items: [
                     "frontend/angular/angular",
@@ -97,6 +82,21 @@ module.exports = {
                     "frontend/angular/angular-directives",
                     "frontend/angular/angular-http",
                     "frontend/angular/angular-material",
+                ],
+            },
+            {
+                type: "category",
+                label: "React",
+                items: [
+                    "frontend/react/react",
+                    "frontend/react/react-folder-structure",
+                    "frontend/react/react-flow",
+                    "frontend/react/react-components",
+                    "frontend/react/react-props",
+                    "frontend/react/react-state",
+                    "frontend/react/react-component-communication",
+                    "frontend/react/react-conditional-render",
+                    "frontend/react/react-lists",
                 ],
             },
         ],
@@ -195,21 +195,21 @@ module.exports = {
             },
         ],
     },
-    {
-        type: "category",
-        label: "Devops",
-        items: [
-            // {
-            //     type: "doc",
-            //     id: "devops/devops",
-            // },
-            {
-                type: "category",
-                label: "Docker",
-                items: ["devops/docker/docker"],
-            },
-        ],
-    },
+    // {
+    //     type: "category",
+    //     label: "Devops",
+    //     items: [
+    //         {
+    //             type: "doc",
+    //             id: "devops/devops",
+    //         },
+    //         {
+    //             type: "category",
+    //             label: "Docker",
+    //             items: ["devops/docker/docker"],
+    //         },
+    //     ],
+    // },
     {
         type: "category",
         label: "GameDev",
