@@ -119,6 +119,7 @@ module.exports = {
                 label: "Express",
                 items: [
                     "backend/express/express",
+                    "backend/express/express-typescript",
                     "backend/express/express-hello-world",
                     "backend/express/express-routes",
                     "backend/express/express-static",
