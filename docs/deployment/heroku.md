@@ -4,6 +4,69 @@ title: Heroku
 sidebar_label: Overview
 ---
 
+## Setup
+
+### Creating apps
+
+- Create heroku account
+- Login to heroku dashboard
+- New &rarr; New app &rarr; deploy-test
+
+### CLI
+
+- Install heroku-cli from snap
+
+```bash
+sudo snap install --classic heroku
+```
+
+- Or from heroku url
+
+```bash
+curl https://cli-assets.heroku.com/install.sh | sh
+```
+
+- Login to heroku account
+
+``` bash
+heroku login
+```
+
+- Initialize a new project
+
+```bash
+cd new-project/
+
+# initialize git repo
+git init
+
+# add heroku remote git branch to deploy-test app
+# deploy-test is the name of created heroku app
+heroku git:remote --app deploy-test
+
+# commit and push
+git add -A
+git commit -m "init project"
+git push heroku master
+```
+
+- Deploy existing project
+
+```bash
+cd existing-project/
+
+# add heroku remote git branch to deploy-test app
+# deploy-test is the name of created heroku app
+heroku git:remote --app deploy-test
+
+# commit and push
+git add -A
+git commit -m "deploy test"
+git push heroku master
+```
+
+---
+
 ## Deal with app load time
 
 - Heroku free tier apps sleep after 30 minutes of inactivity
@@ -249,7 +312,7 @@ npm install serve
 - Now use
   - `npm run dev` for development mode
   - `npm run build` then `npm run start` for production mode
-- add `engines` for consistent environment
+- Add `engines` for consistent environment
 
 ```js title="package.json"
 "engines": {
@@ -265,4 +328,13 @@ npm install serve
 ## Express
 
 - Add Environment variables in heroku website app settings
+- Add `engines` in package.json for consistent environment
+
+```js title="package.json"
+"engines": {
+    "node": "12.16.2",
+    "npm": "6.14.4"
+}
+```
+
 - ```git push heroku master```
