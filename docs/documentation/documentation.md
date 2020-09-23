@@ -96,7 +96,7 @@ module.exports={
 
 - Searchbar
   - [docusaurus-lunr-search](https://github.com/lelouch77/docusaurus-lunr-search)
-  
+
 ```bash title="project_folder"
 npm i docusaurus-lunr-search  --save
 npm run swizzle docusaurus-lunr-search SearchBar
@@ -151,6 +151,44 @@ themeConfig: {
 ```
 
 - [Theme Options](https://github.com/FormidableLabs/prism-react-renderer/tree/master/src/themes)
+
+### Syntax Highlighting
+
+- Use word in single quote backtick for inline highlighting: `example`
+
+```text
+`word`
+```
+
+- Use triple backtick, specify language and title for code-syntax highlighting
+
+```text
+```js title="example.js"
+```
+
+```js title="example.js"
+console.log('test');
+```
+
+- For normal text
+
+```text
+```text title="example"
+```
+
+- For Note highlight
+
+```text
+:::note
+:::
+**NOTE:** Some important info
+```
+
+:::note
+:::
+**NOTE:** Some important info
+
+---
 
 ### Deployment
 

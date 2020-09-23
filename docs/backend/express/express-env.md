@@ -11,13 +11,13 @@ sidebar_label: Environment Variables
 - Install ```npm i dotenv```
 - Create a file ```.env``` in root directory
 
-```txt title=".env"
+```text title=".env"
 MONGO_URI=mongodb://localhost:27017/express-demo
 ```
 
 - Add .env to ```.gitignore```
 
-```txt title=".gitignore"
+```text title=".gitignore"
 .env
 node_modules
 ```
