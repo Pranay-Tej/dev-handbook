@@ -34,6 +34,7 @@ npm start
   - JSX
   - Class-based
   - Functional
+- [TypeScript Setup](react-typescript)
 - [Props](react-props)
 - [State](react-state)
 - [Component Communication](react-component-communication)
