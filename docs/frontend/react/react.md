@@ -41,8 +41,8 @@ npm start
 - Styles
 - [Conditional Render](react-conditional-render)
 - [Lists](react-lists)
+- [EventHandling](react-event-handling)
 - LifeCycle Methods
-- EventHandling
 - Forms
 - Services
 - HTTP

@@ -98,6 +98,7 @@ module.exports = {
                     "frontend/react/react-component-communication",
                     "frontend/react/react-conditional-render",
                     "frontend/react/react-lists",
+                    "frontend/react/react-event-handling",
                 ],
             },
         ],
