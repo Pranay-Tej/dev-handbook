@@ -96,6 +96,7 @@ module.exports = {
                     "frontend/react/react-props",
                     "frontend/react/react-state",
                     "frontend/react/react-component-communication",
+                    "frontend/react/react-styling",
                     "frontend/react/react-conditional-render",
                     "frontend/react/react-lists",
                     "frontend/react/react-event-handling",

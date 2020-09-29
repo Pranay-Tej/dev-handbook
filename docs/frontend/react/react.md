@@ -38,7 +38,7 @@ npm start
 - [Props](react-props)
 - [State](react-state)
 - [Component Communication](react-component-communication)
-- Styles
+- [Styling](react-styling)
 - [Conditional Render](react-conditional-render)
 - [Lists](react-lists)
 - [EventHandling](react-event-handling)
