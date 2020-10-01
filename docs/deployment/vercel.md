@@ -87,6 +87,33 @@ vercel [frontend/react-ui/user-ui/] -c -n [react-example] -t TOKEN --prod
 
 ---
 
+## GitHub Actions (CI CD)
+
+- Create a file `.github/workflows/vercel.yml` in root directory
+- Get vercel API key from account &rarr; tokens
+- Add GitHub Secrets in repository settings &rarr; secrets
+
+```yml title="vercel.yml"
+name: Deploy Vercel
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.1.2
+        with:
+          node-version: '12'
+      - run: npx vercel ts-test/ --confirm --name=gitub-actions-trail --token=${{secrets.VERCEL_TOKEN}} --prod
+```
+
+---
+
 ## GitLab CI
 
 - Add Vercel Token in GitLab CI Environment Variables

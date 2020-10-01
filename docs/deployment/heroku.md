@@ -70,9 +70,47 @@ git push heroku master
 ## Deal with app load time
 
 - Heroku free tier apps sleep after 30 minutes of inactivity
-- Create an endpoint to use for waking the backend
+- Create an endpoint for waking up the backend
 - Add a loading screen to frontend and call the ```/wakeup``` endpoint
 - Load app home page after receiving response from endpoint
+
+---
+
+## GitHub Actions (CI CD)
+
+- Source: [Deploy to Heroku GitHub Action](https://github.com/marketplace/actions/deploy-to-heroku)
+- Create a file `.github/workflows/heroku.yml` in root directory
+- Create new app in heroku dashboard
+- Get heroku API key from account settings
+- Add GitHub Secrets in repository settings &rarr; secrets
+
+:::note
+:::
+**NOTE:** Environment variables set with `HD_EXAMPLE_ENV` can be accessed as `EXAMPLE_ENV` inside heroku app
+
+```yml title="heroku.yml"
+name: Deploy Heroku
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.5.6 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{secrets.HEROKU_APP_BACKEND}} #Must be unique in Heroku
+          heroku_email: ${{secrets.EMAIL_ID}}
+          appdir: "express-test" # <- This will point to the api folder in your project
+        env:
+          HD_MONGO_URI: ${{secrets.MONGO_URI}}
+
+```
 
 ---
 
