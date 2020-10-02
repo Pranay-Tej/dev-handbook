@@ -15,7 +15,7 @@ sidebar_label: Services
 
 - Use different API for production and development
 
-```js title="services/config.ts"
+```ts title="services/config.ts"
 const config = {
     API: () => {
         if (process.env.NODE_ENV == "production") {
@@ -37,7 +37,7 @@ export default config;
 - Use different service files for different logics and calling API endpoints: `userService, todoService`
 - Import config into services
 
-```js title="services/userService.ts"
+```ts title="services/userService.ts"
 import config from "./config";
 
 const API = config.API();
@@ -61,7 +61,7 @@ export default userService;
 
 ## Call Services in Components
 
-```js title="UserList.tsx"
+```ts title="UserList.tsx"
 import React, { useState, useEffect } from "react";
 import userService from "../../../../services/userService";
 
