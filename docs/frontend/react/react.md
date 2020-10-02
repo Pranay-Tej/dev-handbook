@@ -42,10 +42,10 @@ npm start
 - [Conditional Render](react-conditional-render)
 - [Lists](react-lists)
 - [EventHandling](react-event-handling)
+- HTTP
+- [Services](react-services)
 - LifeCycle Methods
 - Forms
-- Services
-- HTTP
 - Hooks
 - React Router
 - [Environment Variables](react-env)

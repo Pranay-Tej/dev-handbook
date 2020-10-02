@@ -100,6 +100,7 @@ module.exports = {
                     "frontend/react/react-conditional-render",
                     "frontend/react/react-lists",
                     "frontend/react/react-event-handling",
+                    "frontend/react/react-services",
                     "frontend/react/react-env",
                 ],
             },
