@@ -50,4 +50,8 @@ npm start
 - React Router
 - [Environment Variables](react-env)
 - Deployment
-  - Heroku
+  - [Vercel](../../deployment/vercel)
+  - [Heroku](../../deployment/heroku#react)
+- Material-UI
+- Redux
+- Next

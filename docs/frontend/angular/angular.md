@@ -55,11 +55,21 @@ sidebar_label: Overview
   - pipe
   - map
   - tap
+- Pipe
+  - async pipe
+  - Custom Pipes
+- NgRx
+  - Store
+  - Actions
+  - Reducer
+  - Selectors
+  - Effects
 - Dockerize
   - nginx
   - Dockerfile
   - docker-compose
-- Forms Module
+- Form Handling
 - Deployment
+  - [Vercel](../../deployment/vercel)
   - [Heroku](../../deployment/heroku#angular)
 - [Angular Material](angular-material)

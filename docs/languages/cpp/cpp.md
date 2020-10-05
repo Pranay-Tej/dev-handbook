@@ -16,13 +16,19 @@ sidebar_label: Overview
 ### Linux
 
 - g++ is already installed in Kubuntu
+- Check version using `g++ -v`
+- If not installed, run `sudo apt install g++`
 - VS Code
   - Install C++ Language support extension
   - Install Code Runner extension
+  - Open CommandPallette <kbd>Ctrl + Shift + P</kbd> or View CommandPalette
+  - Type ```C/C++ Edit Configuration UI```
+  - CompilerPath ```/usr/bin/gcc```
+  - IntelliSenseMode ```gcc-x64```
   - RightClick RunCode
   - Write Access to terminal
     - Open CommandPallette <kbd>Ctrl + Shift + P</kbd> or View CommandPalette
-    - SelectDefaultShell cmd
+    - SelectDefaultShell `bash`
     - File Preferences Settings Users Extensions RunCodeConfiguration Enable RunInTerminal
 
 ### Windows
@@ -42,7 +48,7 @@ sidebar_label: Overview
   - RightClick in any cpp file RunCode
   - Write Access to terminal
     - Open CommandPallette <kbd>Ctrl + Shift + P</kbd> or View CommandPalette
-    - SelectDefaultShell cmd
+    - SelectDefaultShell `cmd`
     - File Preferences Settings Users Extensions RunCodeConfiguration Enable RunInTerminal
 
 ## Overview
