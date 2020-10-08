@@ -68,6 +68,11 @@ module.exports = {
             },
             {
                 type: "category",
+                label: "Sass",
+                items: ["frontend/css/sass"]
+            },
+            {
+                type: "category",
                 label: "Angular",
                 items: [
                     "frontend/angular/angular",
