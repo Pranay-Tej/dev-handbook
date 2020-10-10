@@ -6,6 +6,8 @@ sidebar_label: Working with MongoDB
 
 ## Connecting to Database
 
+### Production
+
 - Install mongoose ```npm i mongoose```
 
 ```js title="app.js"
@@ -17,6 +19,44 @@ mongoose.connect(
     () => console.log("Connected to DB")
 );
 ```
+
+### Development
+
+- Use In-Memory MongoDB as a devDependency
+- ```npm i -D mongodb-memory-server```
+
+```ts title="app.ts"
+import express from 'express';
+import mongoose from 'mongoose';
+
+// Routes
+app.get("/", (req, res) => {
+    res.send("Hello World!");
+});
+
+import { MongoMemoryServer } from 'mongodb-memory-server';
+
+const mongoServer = new MongoMemoryServer();
+
+mongoose.Promise = Promise;
+mongoServer.getUri().then((mongoUri) => {
+  const mongooseOpts = {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  };
+
+  mongoose.connect(mongoUri, mongooseOpts, () => {
+    console.log(`MongoDB successfully connected to ${mongoUri}`);
+  });
+});
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+
+```
+
+---
 
 ## Defining Schema
 
