@@ -110,6 +110,13 @@ module.exports = {
                     "frontend/react/react-env",
                 ],
             },
+            {
+                type: "category",
+                label: "Next",
+                items: [
+                    "frontend/next/next",
+                ],
+            },
         ],
     },
     {

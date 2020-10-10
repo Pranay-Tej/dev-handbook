@@ -54,4 +54,4 @@ npm start
   - [Heroku](../../deployment/heroku#react)
 - Material-UI
 - Redux
-- Next
+- [Next](../next/next)

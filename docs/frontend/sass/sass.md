@@ -31,7 +31,7 @@ sidebar_label: Overview
 
 - node-sass
 - React Setup
-- NextJS Setup
+- Next Setup
 - Angular Setup
 
 ---

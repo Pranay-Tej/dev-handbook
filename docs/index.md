@@ -24,6 +24,7 @@ sidebar_label: Index
 - JS
 - [Angular](frontend/angular/angular)
 - [React](frontend/react/react)
+- [Next](frontend/next/next)
 
 ### Backend
 
