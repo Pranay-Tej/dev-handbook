@@ -14,13 +14,13 @@ sidebar_label: Overview
 
 ## Setup
 
-- Sass files cannot be used directlys
+- Sass files cannot be used directly
 - Include compiled `styles.css` in `index.html`
   - `<link rel="stylesheet" href="styles.css">`
 - VS Code
   - Install `Live Sass Compiler` extension
-  - Open `.sass` or `.scss` file
   - Click on `Watch Sass` button in the bottom bar
+  - Extension will convert ALL `.scss` files into corresponding `.css` files
 - npm
   - Install sass globally or use npx to compile `.scss` or `.sass` into `.css` file
   - Global
@@ -31,6 +31,7 @@ sidebar_label: Overview
 
 - node-sass
 - React Setup
+- NextJS Setup
 - Angular Setup
 
 ---

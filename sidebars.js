@@ -69,7 +69,7 @@ module.exports = {
             {
                 type: "category",
                 label: "Sass",
-                items: ["frontend/css/sass"]
+                items: ["frontend/sass/sass"]
             },
             {
                 type: "category",

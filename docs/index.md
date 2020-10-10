@@ -20,6 +20,7 @@ sidebar_label: Index
 
 - [HTML](frontend/html/html)
 - [CSS](frontend/css/css)
+- [Sass](frontend/sass/sass)
 - JS
 - [Angular](frontend/angular/angular)
 - [React](frontend/react/react)
