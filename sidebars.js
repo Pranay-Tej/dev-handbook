@@ -69,7 +69,13 @@ module.exports = {
             {
                 type: "category",
                 label: "Sass",
-                items: ["frontend/sass/sass"]
+                items: [
+                "frontend/sass/sass",
+                "frontend/sass/sass-variables",
+                "frontend/sass/sass-nesting",
+                "frontend/sass/sass-import",
+                "frontend/sass/sass-mixins",
+            ]
             },
             {
                 type: "category",

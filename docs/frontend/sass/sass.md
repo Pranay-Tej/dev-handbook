@@ -31,18 +31,17 @@ sidebar_label: Overview
 
 - node-sass
 - React Setup
-- Next Setup
+- [Next Setup](../next/next#setup)
 - Angular Setup
 
 ---
 
 ## Overview
 
-- Variables
-- Nesting
-  - Selectors
-- Separate files
-- Mixins
+- [Variables](sass-variables)
+- [Nesting](sass-nesting)
+- [Import](sass-import)
+- [Mixins](sass-mixins)
   - Functions
   - If else
   - Error
