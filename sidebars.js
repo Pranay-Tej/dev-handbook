@@ -75,6 +75,8 @@ module.exports = {
                 "frontend/sass/sass-nesting",
                 "frontend/sass/sass-import",
                 "frontend/sass/sass-mixins",
+                "frontend/sass/sass-extend",
+                "frontend/sass/sass-operators",
             ]
             },
             {

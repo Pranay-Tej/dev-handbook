@@ -42,8 +42,7 @@ sidebar_label: Overview
 - [Nesting](sass-nesting)
 - [Import](sass-import)
 - [Mixins](sass-mixins)
-  - Functions
-  - If else
-  - Error
-- Extensions
-- Operators
+- Conditionals
+- [Extend](sass-extend)
+- [Operators](sass-operators)
+- Organize
