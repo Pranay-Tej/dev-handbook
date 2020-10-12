@@ -42,7 +42,7 @@ sidebar_label: Overview
 - [Nesting](sass-nesting)
 - [Import](sass-import)
 - [Mixins](sass-mixins)
-- Conditionals
+- [Conditionals](sass-conditionals)
 - [Extend](sass-extend)
 - [Operators](sass-operators)
-- Organize
+- [Organize](sass-organize)

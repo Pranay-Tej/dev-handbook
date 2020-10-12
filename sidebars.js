@@ -77,6 +77,8 @@ module.exports = {
                 "frontend/sass/sass-mixins",
                 "frontend/sass/sass-extend",
                 "frontend/sass/sass-operators",
+                "frontend/sass/sass-conditionals",
+                "frontend/sass/sass-organize",
             ]
             },
             {
