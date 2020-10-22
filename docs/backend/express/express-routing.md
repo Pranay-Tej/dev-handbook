@@ -1,7 +1,7 @@
 ---
-id: express-routes
-title: Routes
-sidebar_label: Routes
+id: express-routing
+title: Routing
+sidebar_label: Routing
 ---
 
 ## Routes
@@ -11,27 +11,6 @@ app.get('/', (req,res) => {
     res.send('Home!')
 })
 
-app.get('/users', (req,res) => {
-    res.send('Users!')
-})
-
-app.get('/articles', (req,res) => {
-    res.send('Articles!')
-})
-```
-
-## Middleware
-
-```js title="app.js"
-
-// Middleware
-app.use("/users", (req, res, next) => {
-    console.log("Users middleware running");
-    // next() method goes to app.get('/users')
-    next();
-});
-
-// Routes
 app.get('/users', (req,res) => {
     res.send('Users!')
 })
@@ -93,10 +72,10 @@ router.get('/:year/:month', (req, res) => {
 ## Route Parameter Queries
 
 - Access Route Parameter Queries as ```req.query.query_name```
-- Example: ```localhost:3000/articles?orderBy=name```
+- Example: ```localhost:3000/articles?orderBy=name&userId=1618```
 
 ```js title="articles.js"
 router.get('/', (req, res) => {
-    res.send(`Ordered by: ${req.query.orderBy}`)
+    res.send(`Ordered by: ${req.query.orderBy} ${req.query.userId}`)
 })
 ```

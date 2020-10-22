@@ -58,7 +58,8 @@ sidebar_label: Overview
 
 - [TypeScript](express-typescript)
 - [Hello World](express-hello-world)
-- [Routes](express-routes)
+- [Routing](express-routing)
+- [Middleware](express-middleware)
 - [Requests](express-requests)
 - [Serve Static Pages](express-static)
 - [Working with MongoDB](express-mongo)
