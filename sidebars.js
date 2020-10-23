@@ -151,6 +151,7 @@ module.exports = {
                     "backend/express/express-hello-world",
                     "backend/express/express-routing",
                     "backend/express/express-middleware",
+                    "backend/express/express-sub-routes",
                     "backend/express/express-static",
                     "backend/express/express-requests",
                     "backend/express/express-mongo",
