@@ -32,6 +32,24 @@ tsc --init
 
 ---
 
+## `.gitignore`
+
+```text title=".gitignore"
+# build files
+build
+
+# node modules
+node_modules
+
+#editor
+.vscode
+
+#config
+.env
+```
+
+---
+
 ## npm
 
 - Initialize a npm project
@@ -49,7 +67,7 @@ npm i express typescript @types/node @types/express
 - Install dev dependencies
 
 ```bash
-npm i ts-node nodemon
+npm i -D ts-node nodemon
 ```
 
 - Edit `scripts` in `package.json`

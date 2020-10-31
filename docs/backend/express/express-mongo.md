@@ -83,6 +83,8 @@ const ArticleSchema = new Schema({
 module.exports = mongoose.model("Article", ArticleSchema);
 ```
 
+---
+
 ### Save data to database
 
 - To deal with json and forms add middleware to app.js
@@ -95,6 +97,8 @@ app.use(express.urlencoded({ extended: false }));
 
 - Add post request route to ```routes/article.js```
 - Use ```res.json()``` to return a json
+
+### Using `new Model()`
 
 ```js title="article.js"
 router.post("/", (req, res) => {
@@ -122,6 +126,22 @@ router.post("/", async (req, res) => {
     }
 });
 ```
+
+### Using `Model.create()`
+
+```js title="article.js"
+router.post("/", async (req, res) => {
+
+    try {
+        const savedArticle = Article.create(req.body);
+        res.json(savedArticle);
+    } catch (err){
+        res.status(404).json({ message: err });
+    }
+});
+```
+
+---
 
 ## Get data from database
 
@@ -154,6 +174,8 @@ router.get("/:id", async (req, res) => {
 });
 ```
 
+---
+
 ## Update data
 
 ```js title="article.js"
@@ -174,6 +196,8 @@ router.put("/:id", async (req, res) => {
     }
 });
 ```
+
+---
 
 ## Delete data
 
