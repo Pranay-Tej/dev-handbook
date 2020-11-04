@@ -226,21 +226,21 @@ module.exports = {
             },
         ],
     },
-    // {
-    //     type: "category",
-    //     label: "Devops",
-    //     items: [
-    //         {
-    //             type: "doc",
-    //             id: "devops/devops",
-    //         },
-    //         {
-    //             type: "category",
-    //             label: "Docker",
-    //             items: ["devops/docker/docker"],
-    //         },
-    //     ],
-    // },
+    {
+        type: "category",
+        label: "Devops",
+        items: [
+            // {
+            //     type: "doc",
+            //     id: "devops/devops",
+            // },
+            {
+                type: "category",
+                label: "Docker",
+                items: ["devops/docker/docker"],
+            },
+        ],
+    },
     {
         type: "category",
         label: "GameDev",
