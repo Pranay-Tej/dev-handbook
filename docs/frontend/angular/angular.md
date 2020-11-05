@@ -55,7 +55,8 @@ sidebar_label: Overview
   - pipe
   - map
   - tap
-- Pipe
+- [Pipes](angular-pipes)
+  - json pipe
   - async pipe
   - Custom Pipes
 - NgRx
