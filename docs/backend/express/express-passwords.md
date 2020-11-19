@@ -4,7 +4,7 @@ title: Hashing Passwords
 sidebar_label: Hashing Passwords
 ---
 
-## bcryptjs
+## bcryptjs package
 
 - Install bcryptjs
 
@@ -12,7 +12,9 @@ sidebar_label: Hashing Passwords
 npm i bcryptjs
 ```
 
-- Hash password
+---
+
+## Hash password
 
 ```ts title="auth.router.ts"
 import bcrypt from "bcryptjs";
@@ -37,7 +39,9 @@ authRouter.post("/register", async (req, res) => {
 });
 ```
 
-- Compare password
+---
+
+## Compare password
 
 ```ts title="auth.router.ts"
 import bcrypt from "bcryptjs";

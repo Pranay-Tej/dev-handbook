@@ -67,3 +67,4 @@ sidebar_label: Overview
 - [Environment Variables](express-env)
 - [Hashing Passwords](express-passwords)
 - [Deployment](../../deployment/heroku#express)
+- [JWT](express-jwt)

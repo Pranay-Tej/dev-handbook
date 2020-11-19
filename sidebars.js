@@ -156,6 +156,7 @@ module.exports = {
                         "backend/express/express-mongo",
                         "backend/express/express-env",
                         "backend/express/express-passwords",
+                        "backend/express/express-jwt",
                     ],
                 },
                 {
