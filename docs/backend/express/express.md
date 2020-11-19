@@ -65,4 +65,5 @@ sidebar_label: Overview
 - [Requests](express-requests)
 - [Working with MongoDB](express-mongo)
 - [Environment Variables](express-env)
+- [Hashing Passwords](express-passwords)
 - [Deployment](../../deployment/heroku#express)

@@ -10,6 +10,8 @@ sidebar_label: Overview
 
 - Docker Engine: [Guide](https://docs.docker.com/engine/install/ubuntu/)
 - Docker Compose: [Guide](https://docs.docker.com/compose/install/)
+- Docker Non-Root: [Guide](https://docs.docker.com/engine/install/linux-postinstall/)
+- Docker Station: Graphical UI for Docker [DockStation](https://dockstation.io/)
 
 ### Snap (Not recommended)
 
