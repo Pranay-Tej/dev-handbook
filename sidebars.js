@@ -97,6 +97,7 @@ module.exports = {
                         "frontend/angular/angular-directives",
                         "frontend/angular/angular-http",
                         "frontend/angular/angular-pipes",
+                        "frontend/angular/angular-jwt-auth",
                         "frontend/angular/angular-material",
                     ],
                 },

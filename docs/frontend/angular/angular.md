@@ -59,6 +59,12 @@ sidebar_label: Overview
   - json pipe
   - async pipe
   - Custom Pipes
+- [JWT Authentication](angular-jwt-auth)
+  - HTTP Interceptor
+  - Auth Guard
+  - Router Module
+  - Auth Service
+  - Login Component
 - NgRx
   - Store
   - Actions
