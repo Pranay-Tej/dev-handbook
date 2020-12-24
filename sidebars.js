@@ -36,6 +36,11 @@ module.exports = {
                     label: "Java",
                     items: ["languages/java/java"],
                 },
+                {
+                    type: "category",
+                    label: "Node",
+                    items: ["languages/node/node"],
+                },
             ],
         },
         {

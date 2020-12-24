@@ -10,6 +10,7 @@ sidebar_label: Index
 
 - [CPP](languages/cpp/cpp)
 - [Java](languages/java/java)
+- [Node](languages/node/node)
 - Python
 
 ### [Data Structures](ds/ds)

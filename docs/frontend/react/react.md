@@ -13,7 +13,7 @@ sidebar_label: Overview
 
 ## Setup
 
-- Install Node
+- Install Node: [Guide](../../languages/node/node)
 - Use ```create-react-app```
 
 ```bash

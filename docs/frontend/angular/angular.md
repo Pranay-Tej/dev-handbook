@@ -14,7 +14,7 @@ sidebar_label: Overview
 
 ### Linux
 
-- Install Node
+- Install Node: [Guide](../../languages/node/node)
 - Install angular-cli from npm ```npm install -g @angular/cli```
 - Create project ```ng new test-project```
   - options

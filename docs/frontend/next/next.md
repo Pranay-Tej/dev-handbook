@@ -12,7 +12,7 @@ sidebar_label: Overview
 
 ## Setup
 
-- Install Node
+- Install Node: [Guide](../../languages/node/node)
 - Use ```create-next-app```
 
 ```bash

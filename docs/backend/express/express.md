@@ -16,7 +16,7 @@ sidebar_label: Overview
 
 #### Manual Setup
 
-- Install node
+- Install Node: [Guide](../../languages/node/node)
 - Make a folder ```express-demo```
 - Go to the folder ```cd express-demo```
 - ```npm init --yes``` &rarr; creates ```package.json```
