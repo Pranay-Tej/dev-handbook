@@ -11,7 +11,8 @@ sidebar_label: Routing
 - [Redirect](#redirect)
 - [Wild-Cart Route](#wild-cart-route)
 - [Children routes](#children-routes)
-- [Route Parameters](#route-parameters)
+- [Path Variables](#path-variables)
+- [Query Parameters](#query-parameters)
 - [Router Outlet](#router-outlet)
 - [Navigation](#navigation)
 - [Module-based Routing & Lazy Loading](#module-based-routing--lazy-loading)
@@ -55,6 +56,8 @@ sidebar_label: Routing
     imports : [AppRoutingModule]
 ```
 
+---
+
 ## Redirect
 
 ```ts title="AppRoutingModule"
@@ -71,6 +74,8 @@ sidebar_label: Routing
     ]
 ```
 
+---
+
 ## Wild-Cart Route
 
 ```ts title="AppRoutingModule"
@@ -81,6 +86,8 @@ sidebar_label: Routing
         { path : '**', component : PageNotFoundComponent }
     ]
 ```
+
+---
 
 ## Children routes
 
@@ -100,7 +107,9 @@ sidebar_label: Routing
     ]
 ```
 
-## Route Parameters
+---
+
+## Path Variables
 
 ```ts title="AppRoutingModule"
     const routes : Routes = [
@@ -131,6 +140,41 @@ sidebar_label: Routing
     }
 ```
 
+---
+
+## Query Parameters
+
+- URL : `/articles?userId=16`
+
+```ts title="UserList"
+navigateToArticles(id){
+  this.router.navigate(['/articles'], { queryParams: { userId: '23' } });
+}
+```
+
+- access queryParams
+
+```ts title="ArticleList"
+    import { ActivatedRoute } from '@angular/router';
+
+    constructor(
+        private activatedRoute : ActivatedRoute
+    ){}
+
+    ngOnInit(){
+        this.activatedRoute.queryParams.subscribe(
+            queryParams => {
+                const userId = <string>queryParams['userId']
+                if(userId != null){
+                    // Load article from backend
+                }
+            }
+        )
+    }
+```
+
+---
+
 ## Router Outlet
 
 - Router Outlet will tell angular where to load the routed components in DOM Tree
@@ -143,6 +187,8 @@ sidebar_label: Routing
     </router-outlet>
 <footer></footer>
 ```
+
+---
 
 ## Navigation
 
@@ -170,6 +216,8 @@ sidebar_label: Routing
         this.router.navigate(['/article', 31])
     }
 ```
+
+---
 
 ## Module-based Routing & Lazy Loading
 

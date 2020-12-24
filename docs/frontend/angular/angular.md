@@ -37,6 +37,10 @@ sidebar_label: Overview
   - Dependency Injection
 - [Component Communication](angular-component-communication)
 - [Routing](angular-routing)
+  - Router Module
+  - Path Variables
+  - Query Params
+  - Lazy Loading
 - [Data Binding](angular-data-binding)
   - Interpolation
   - Property Binding
@@ -76,6 +80,13 @@ sidebar_label: Overview
   - Dockerfile
   - docker-compose
 - Form Handling
+  - Template Driven
+  - Reactive
+    - FormControl
+    - FormGroup
+    - FormArray
+    - FormBuilder
+  - Validation
 - Deployment
   - [Vercel](../../deployment/vercel)
   - [Heroku](../../deployment/heroku#angular)

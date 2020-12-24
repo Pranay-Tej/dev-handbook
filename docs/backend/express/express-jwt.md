@@ -1,7 +1,28 @@
 ---
 id: express-jwt
-title: JWT
-sidebar_label: JWT
+title: JWT Authentication
+sidebar_label: JWT Authentication
+---
+
+## Authentication Basics
+
+- Authentication
+  - Check if the request can proceed
+- Authorization
+  - Check if authenticated user has the permission to proceed
+- Identification
+  - Check ID of the user making the request
+
+---
+
+## JWT
+
+- A type of Bearer token
+- Server sends a token to user on successful login
+- User has to send token for every request
+- Token is a combination of SECRET + PAYLOAD (user_info)
+- Server will verify the token and gets payload
+
 ---
 
 ## jsonwebtoken package
