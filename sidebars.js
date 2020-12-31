@@ -144,11 +144,6 @@ module.exports = {
                 // },
                 {
                     type: "category",
-                    label: "Spring Boot",
-                    items: ["backend/springboot/springboot"],
-                },
-                {
-                    type: "category",
                     label: "Express",
                     items: [
                         "backend/express/express",
@@ -164,6 +159,16 @@ module.exports = {
                         "backend/express/express-passwords",
                         "backend/express/express-jwt",
                     ],
+                },
+                {
+                    type: "category",
+                    label: "Strapi",
+                    items: ["backend/strapi/strapi"],
+                },
+                {
+                    type: "category",
+                    label: "Spring Boot",
+                    items: ["backend/springboot/springboot"],
                 },
                 {
                     type: "category",

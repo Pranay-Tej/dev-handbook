@@ -29,8 +29,9 @@ sidebar_label: Index
 
 ### Backend
 
-- [Spring Boot](backend/springboot/springboot)
 - [Express](backend/express/express)
+- [Strapi](backend/strapi/strapi)
+- [Spring Boot](backend/springboot/springboot)
 - [Flask](backend/flask/flask)
 
 ### Database
