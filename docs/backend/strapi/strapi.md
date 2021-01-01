@@ -64,3 +64,13 @@ DATABASE_PASSWORD=abcd
 :::note
 :::
 **NOTE:** Creation of Content types is not allowed in production mode
+
+---
+
+## Swagger Documentation
+
+- [Official Docs Guide](https://strapi.io/documentation/developer-docs/latest/plugins/documentation.html)
+- Install plugin `npm run strapi install documentation` in project root location
+- Restart Strapi app
+- Login to admin panel
+- Enable Restricted access to documentation by adding password
