@@ -71,6 +71,32 @@ DATABASE_PASSWORD=abcd
 
 - [Official Docs Guide](https://strapi.io/documentation/developer-docs/latest/plugins/documentation.html)
 - Install plugin `npm run strapi install documentation` in project root location
+- Configure Production mode url for swagger documentation: [Guide](https://strapi.io/documentation/developer-docs/latest/plugins/documentation.html#settings)
+- Create a file `./extensions/documentation/config/settings.json`
+
+:::note
+:::
+**NOTE:** Any changes done full_documentation.json will rewrite everytime (volatile) a new model is generated or server is restarted. Only settings.json config is persistent.
+
+```json title="/extensions/documentation/config/settings.json"
+{
+  "servers": [
+    {
+      "url": "http://localhost:1337",
+      "description": "Development server"
+    },
+    {
+      "url": "YOUR_STAGING_SERVER",
+      "description": "Staging server"
+    },
+    {
+      "url": "https://strapiatlas.herokuapp.com",
+      "description": "Production server"
+    }
+  ]
+}
+```
+
 - Restart Strapi app
 - Login to admin panel
 - Enable Restricted access to documentation by adding password
