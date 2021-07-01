@@ -76,7 +76,7 @@ DATABASE_PASSWORD=abcd
 
 :::note
 :::
-**NOTE:** Any changes done full_documentation.json will rewrite everytime (volatile) a new model is generated or server is restarted. Only settings.json config is persistent.
+**NOTE:** Any changes done to `full_documentation.json` will rewrite every time (volatile) a new model is generated or server is restarted. So don't make any changes to it. Only `settings.json` config is persistent.
 
 ```json title="/extensions/documentation/config/settings.json"
 {

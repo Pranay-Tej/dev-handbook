@@ -2,6 +2,7 @@
 id: about
 title: About the Documentation
 sidebar_label: About Docs
+slug: /
 ---
 
 ## [Go To Index](/index)
