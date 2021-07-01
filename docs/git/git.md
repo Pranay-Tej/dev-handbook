@@ -32,6 +32,7 @@ sudo apt-get install git
 ```bash
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
+git config --list
 ```
 
 ## GitHub Course

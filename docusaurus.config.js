@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Handbook for developers',
   url: 'https://dev-handbook.now.sh',
   baseUrl: '/',
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: 'img/code-slash.ico',
   organizationName: 'Pranay-Tej', // Usually your GitHub org/user name.

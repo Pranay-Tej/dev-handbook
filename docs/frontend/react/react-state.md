@@ -8,8 +8,11 @@ sidebar_label: State
 
 - [Definition](#definition)
 - [Usage in Functional Components](#usage-in-functional-components)
+  - [Defining State](#defining-state)
   - [Changing State](#changing-state)
+- [Usage in Class-based Components](#usage-in-class-based-components)
   - [Changing State](#changing-state-1)
+- [Changing State without using ```setState```](#changing-state-without-using-setstate)
 - [```doSomething()``` after changing state](#dosomething-after-changing-state)
   - [Class-based Components](#class-based-components)
   - [Functional Components](#functional-components)
@@ -224,7 +227,7 @@ capitalizeMessage() {
 
 - Use ```useEffect``` hook and look for changes in ```message``` state and act accordingly
 
-- Read ```useEffect``` in [Life Cycle Methods](react-life-cycle)
+- Read ```useEffect``` in Life Cycle Methods
 
 ## state change dependent on its previous value
 

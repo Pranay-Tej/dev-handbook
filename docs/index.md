@@ -25,14 +25,17 @@ sidebar_label: Index
 - JS
 - [Angular](frontend/angular/angular)
 - [React](frontend/react/react)
-- [Next](frontend/next/next)
+- Next
 
 ### Backend
 
 - [Express](backend/express/express)
 - [Strapi](backend/strapi/strapi)
+
+<!---
 - [Spring Boot](backend/springboot/springboot)
 - [Flask](backend/flask/flask)
+--->
 
 ### Database
 

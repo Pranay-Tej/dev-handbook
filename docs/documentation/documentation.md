@@ -16,27 +16,21 @@ sidebar_label: Overview
 - initialize docusaurus project
 
 ```bash title="terminal"
-npx @docusaurus/init@next init dev-handbook classic
-
+npx @docusaurus/init@latest init my-website classic
 ```
 
 - delete blog/ folder
 - enable "docs-only" mode
+- [Guide](https://docusaurus.io/docs/docs-introduction#docs-only-mode)
 
 ```json title="docusaurus.config"
 docs: {
-  routeBasePath: "", // docs-only mode
+  routeBasePath: "/", // docs-only mode
 }
 ```
 
-```js title="index.js"
-import { Redirect } from "@docusaurus/router";
-
-function Home() {
-    return <Redirect to={useBaseUrl("/index")} />;
-}
-```
-
+- use the frontmatter slug: / on the document that should be the index page
+- delete the existing homepage at ./src/pages/index.js
 - add site details
 
 ```js title="docusaurus.config.js"
@@ -119,6 +113,8 @@ npx http-server ./build
 :::note
 :::
 **NOTE:** Docusaurus search information can only be generated from a production build. Local development is currently not supported.
+
+---
 
 ### Syntax Highlighting for Languages
 

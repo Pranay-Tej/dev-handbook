@@ -78,7 +78,7 @@ receiveFromChild(userInput){
 
 ## Using Services
 
-Read [RxJS](angular-rxjs) for Subjects and Observables
+Read RxJS for Subjects and Observables
 
 ```ts title="CommunicationService"
 // msgEmitter = new EventEmitter<string>();

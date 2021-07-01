@@ -41,7 +41,7 @@ getAllUsers() : Observable<any>{
 }
 ```
 
-- Read [Environments Section](angular-environments)
+- Read Environments
 
 - Inject Service into components
 
@@ -65,7 +65,7 @@ constructor(
 ){}
 ```
 
-- Read [RxJs Section](angular-rxjs) for Observables
+- Read RxJs for Observables
 
 :::note
 :::

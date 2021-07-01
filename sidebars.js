@@ -127,11 +127,11 @@ module.exports = {
                         "frontend/react/react-env",
                     ],
                 },
-                {
-                    type: "category",
-                    label: "Next",
-                    items: ["frontend/next/next"],
-                },
+                // {
+                //     type: "category",
+                //     label: "Next",
+                //     items: ["frontend/next/next"],
+                // },
             ],
         },
         {
@@ -165,16 +165,16 @@ module.exports = {
                     label: "Strapi",
                     items: ["backend/strapi/strapi"],
                 },
-                {
-                    type: "category",
-                    label: "Spring Boot",
-                    items: ["backend/springboot/springboot"],
-                },
-                {
-                    type: "category",
-                    label: "Flask",
-                    items: ["backend/flask/flask"],
-                },
+                // {
+                //     type: "category",
+                //     label: "Spring Boot",
+                //     items: ["backend/springboot/springboot"],
+                // },
+                // {
+                //     type: "category",
+                //     label: "Flask",
+                //     items: ["backend/flask/flask"],
+                // },
             ],
         },
         {

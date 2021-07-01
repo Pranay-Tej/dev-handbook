@@ -40,7 +40,7 @@ function Parent() {
 }
 ```
 
-- Read ```<input>``` in [Forms](react-forms)
+- Read ```<input>``` in Forms
 
 ```jsx title="Child.js"
 function Child(props) {
@@ -108,7 +108,7 @@ function Child(props) {
 }
 ```
 
-- Read Reactive Forms in [Forms](react-forms)
+- Read Reactive Forms in Forms
 
 ## Sibling to Sibling through Parent
 
@@ -170,7 +170,7 @@ function Sibling2(props) {
 }
 ```
 
-- Read ```useEffect()``` in [Life Cycle Methods](react-life-cycle)
+- Read ```useEffect()``` in Life Cycle Methods
 
 ## Without Parent-Child Interaction
 
