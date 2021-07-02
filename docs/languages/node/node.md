@@ -13,7 +13,7 @@ sidebar_label: Overview
 ### Linux
 
 - [Guide](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/)
-- Install nvm
+- Install nvm [GitHub](https://github.com/nvm-sh/nvm)
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash

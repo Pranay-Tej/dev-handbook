@@ -69,7 +69,7 @@ sidebar_label: Overview
   - Router Module
   - Auth Service
   - Login Component
-- NgRx
+- [NgRx](angular-ngrx)
   - Store
   - Actions
   - Reducer
@@ -79,7 +79,7 @@ sidebar_label: Overview
   - nginx
   - Dockerfile
   - docker-compose
-- Form Handling
+- [Form Handling](angular-form-handling)
   - Template Driven
   - Reactive
     - FormControl

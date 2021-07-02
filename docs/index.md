@@ -25,6 +25,7 @@ sidebar_label: Index
 - JS
 - [Angular](frontend/angular/angular)
 - [React](frontend/react/react)
+- [Vue 3](frontend/vue/vue)
 - Next
 
 ### Backend

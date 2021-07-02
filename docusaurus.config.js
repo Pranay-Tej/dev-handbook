@@ -1,46 +1,47 @@
 module.exports = {
-  title: 'dev-handbook',
-  tagline: 'Handbook for developers',
-  url: 'https://dev-handbook.now.sh',
-  baseUrl: '/',
+  title: "dev-handbook",
+  tagline: "Handbook for developers",
+  url: "https://dev-handbook.now.sh",
+  baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: 'img/code-slash.ico',
-  organizationName: 'Pranay-Tej', // Usually your GitHub org/user name.
-  projectName: 'dev-handbook', // Usually your repo name.
+  favicon: "img/code-slash.ico",
+  organizationName: "Pranay-Tej", // Usually your GitHub org/user name.
+  projectName: "dev-handbook", // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      // "light" | "dark"
+      defaultMode: "light",
+    },
     navbar: {
-      title: 'dev-handbook',
+      title: "dev-handbook",
       items: [
         {
-          href: 'https://github.com/Pranay-Tej/dev-handbook',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/Pranay-Tej/dev-handbook",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     prism: {
-      additionalLanguages: ['csharp'],
-      theme: require('prism-react-renderer/themes/oceanicNext'),
+      additionalLanguages: ["csharp"],
+      theme: require("prism-react-renderer/themes/oceanicNext"),
     },
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
           routeBasePath: "/", // docs-only mode
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/Pranay-Tej/dev-handbook/edit/master/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/Pranay-Tej/dev-handbook/edit/master/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
   ],
-  plugins: [
-    'docusaurus-lunr-search'
-  ]
+  plugins: ["docusaurus-lunr-search"],
 };
