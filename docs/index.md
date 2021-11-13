@@ -4,7 +4,9 @@ title: Index
 sidebar_label: Index
 ---
 
-### [Online Resources](resources/resources)
+### Online Resources
+
+- [Online Resources](resources/resources)
 
 ### Languages
 
@@ -13,9 +15,13 @@ sidebar_label: Index
 - [Node](languages/node/node)
 - Python
 
-### [Data Structures](ds/ds)
+### Data Structures
 
-### [Algorithms](algorithms/algorithms)
+- [Data Structures](ds/ds)
+
+### Algorithms
+
+- [Algorithms](algorithms/algorithms)
 
 ### Frontend
 
@@ -23,10 +29,10 @@ sidebar_label: Index
 - [CSS](frontend/css/css)
 - [Sass](frontend/sass/sass)
 - JS
-- [Angular](frontend/angular/angular)
 - [React](frontend/react/react)
 - [Vue 3](frontend/vue/vue)
-- Next
+- [Angular](frontend/angular/angular)
+<!-- - NextJS -->
 
 ### Backend
 
@@ -42,9 +48,17 @@ sidebar_label: Index
 
 - [MongoDB](db/mongo/mongo)
 
-### [Linux](linux/linux)
+### Linux
 
-### [Git](git/git)
+- [Linux](linux/linux)
+
+### Git
+
+- [Git](git/git)
+
+### VS Code
+
+- [VS Code](vscode/vscode)
 
 ### DevOps
 
@@ -63,4 +77,6 @@ sidebar_label: Index
 - [Tutorial Notes](gamedev/unity/unity-tutorial-notes)
 - [Udemy BTP Course](gamedev/unity/unity-udemy-btp-course)
 
-### [Documentation Tools](documentation/documentation)
+### Documentation Tools
+
+- [Documentation Tools](documentation/documentation)

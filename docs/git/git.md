@@ -33,6 +33,10 @@ sudo apt-get install git
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 git config --list
+
+# if default branch name is not `main`
+# use main as default branch name
+git config --global init.defaultBranch main
 ```
 
 ## GitHub Course

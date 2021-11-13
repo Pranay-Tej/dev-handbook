@@ -6,7 +6,7 @@ sidebar_label: Overview
 
 ## Courses
 
-- <a href="https://www.youtube.com/playlist?list=PLC3y8-rFHvwgeQIfSDtEGVvvSEPDkL_1f" _target="blank">Codevolution Vue 3</a>
+- <a href="https://www.youtube.com/playlist?list=PLC3y8-rFHvwgeQIfSDtEGVvvSEPDkL_1f"_target="blank">Codevolution Vue 3</a>
 - <a href="https://v3.vuejs.org/" _target="blank">Vue 3 official docs</a>
 - FrontendMasters Courses
   - Intro to Vue
@@ -43,6 +43,7 @@ sidebar_label: Overview
   - Vue Router
 - UI Components
   - Vuetify
+  - <a href="https://www.naiveui.com">Naive UI</a>
 - State management
   - Vuex
 - Forms
@@ -93,6 +94,7 @@ sidebar_label: Overview
   ```
 
   - (Optional) Vite dev server with vue cli project (faster development) <a href="https://wildermuth.com/2021/01/10/Vite-for-Existing-Vue-CLI-Projects" _target="blank">Article</a>
+
 - Vite
 
   ```bash

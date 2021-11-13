@@ -7,6 +7,7 @@ sidebar_label: Overview
 ## Courses
 
 - [SoloLearn](https://www.sololearn.com/Course/HTML/)
+- [Scrimba - HTMl & CSS](https://scrimba.com/learn/htmlcss)
 
 ## HTML Symbols
 

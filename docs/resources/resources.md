@@ -49,14 +49,15 @@ sidebar_label: Online Resources
 
 ### YouTube Channels
 
-- [TheNewBoston](https://www.youtube.com/user/thenewboston)
+- [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA)
 - [freeCodeCamp](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
-- [Telusko](https://www.youtube.com/user/javaboynavin/playlists)
+- [Bedimcode](https://www.youtube.com/channel/UCgkDs77BoEhMIgRUB4MKrtQ)
+- [Codevolution](https://www.youtube.com/channel/UC80PWRj_ZU8Zu0HSMNVwKWw)
+- [dcode](https://www.youtube.com/channel/UCjX0FtIZBBVD3YoCcxnDC4g)
+- [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg)
+- [TheNewBoston](https://www.youtube.com/user/thenewboston)
 - [GeeksForGeeks](https://www.youtube.com/channel/UC0RhatS1pyxInC00YKjjBqQ)
 - [LevelUpTuts](https://www.youtube.com/channel/UCyU5wkjgQYGRB0hIHMwm2Sg)
-- [Derek Banas](https://www.youtube.com/user/derekbanas/playlists)
-- [Edureka](https://www.youtube.com/user/edurekaIN)
-- [Intellipaat](https://www.youtube.com/channel/UCCktnahuRFYIBtNnKT5IYyg)
 
 - - -
 
@@ -122,8 +123,9 @@ Practice, Competitive Programming ```CP```
 
 - [CCDSAP](https://www.codechef.com/certification/data-structures-and-algorithms/about) - CodeChef Certified Data Structure & Algorithms Programme
     > Job opportunities through CCDSAP certification
-- [Pramp](https://www.pramp.com/) - Practice Mock Interviews and Coding Problems
-- [LinkedIn](https://www.linkedin.com/)
-- [Internshala](https://internshala.com/)
-- [Glassdoor](https://www.glassdoor.co.in/index.htm) - Search Jobs, Reviews, Salaries
+- [Pramp](https://www.pramp.com) - Practice Mock Interviews and Coding Problems
+- [Naukri](https://www.naukri.com)
+- [Instahyre](https://www.instahyre.com)
+- [TopHire](https://tophire.co)
+- [LinkedIn](https://www.linkedin.com)
 - [Craft](https://craft.co/)

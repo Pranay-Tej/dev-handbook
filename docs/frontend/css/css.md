@@ -12,20 +12,23 @@ sidebar_label: Overview
 
 - [Scrimba](https://scrimba.com/course/gflexbox)
 - [Flexbox Froggy](https://flexboxfroggy.com)
+- [FlexboxPatterns Excercises](https://www.flexboxpatterns.com)
+- [Flex Cheatsheet](https://yoksel.github.io/flex-cheatsheet)
 
 ## CSS Grid
 
 - [Scrimba](https://scrimba.com/course/gR8PTE)
 - [Grid Garden](https://cssgridgarden.com/)
+- [Grid Cheatsheet](https://yoksel.github.io/grid-cheatsheet)
 
 ## CSS Variables
 
 - [Scrimba](https://scrimba.com/course/gcssvariables)
 
 ```css title="index.css"
-// Declaration
+/* Declaration */
 
-:root{
+:root {
   --primary-color: #000000;
   --secondary-color: rgb(32, 173, 56);
 
@@ -35,13 +38,18 @@ sidebar_label: Overview
   --nav-bar-height: 3.8rem;
 }
 
-// Usage
+/* Usage */
 
-body{
+body {
   color: var(--primary-font-color);
 }
 
-.navbar-item{
+/* Variables can be overridden */
+.dark-theme {
+  color: white;
+}
+
+.navbar-item {
   height: var(--nav-bar-height);
   width: var(--nav-bar-height);
 }
@@ -50,6 +58,7 @@ body{
 ## UI Design Fundamentals
 
 - [Scrimba](https://scrimba.com/course/gdesign)
+- Refactoring UI - Book
 
 ## Responsive Design
 
@@ -94,19 +103,18 @@ Usage
 ### Media Queries
 
 ```css title="library.css"
-
 /* Option: 1 */
 /* Use flex-direction column for smaller devices */
-.articles{
-    display:flex;
+.articles {
+  display: flex;
 }
 
 /* Mobile Styles */
 /* Applied only if width <= 1000px */
 @media screen and (max-width: 1000px) {
-    .articles{
-        flex-direction:column;
-    }
+  .articles {
+    flex-direction: column;
+  }
 }
 
 /* Option: 2 */
@@ -114,21 +122,21 @@ Usage
 
 /* Desktop styles */
 .library {
-    display: grid;
-    grid-template-areas: "sm c c";
-    grid-template-columns: 1fr 1fr repeat(1, 1fr);
-    grid-template-rows: 1fr;
-    height: calc(100% - var(--nav-bar-height));
+  display: grid;
+  grid-template-areas: "sm c c";
+  grid-template-columns: 1fr 1fr repeat(1, 1fr);
+  grid-template-rows: 1fr;
+  height: calc(100% - var(--nav-bar-height));
 }
 
 /* Mobile Styles */
 /* Applied only if width <= 1000px */
 @media screen and (max-width: 1000px) {
-    .library {
-        grid-template-areas: "c";
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
+  .library {
+    grid-template-areas: "c";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 ```
 
@@ -138,46 +146,58 @@ Usage
 
 ```css
 .heading {
-    color: darkblue;
-    transition: all 0.5s;
+  color: darkblue;
+  transition: all 0.5s;
 }
 .heading:hover {
-    color: aqua;
+  color: aqua;
 }
 ```
 
-```transition: (property) (duration) (timing-funtion) (delay)```
+`transition: (property) (duration) (timing-funtion) (delay)`
 
-- ```transition-property: all```
-- ```transition-duration: (time in s)```
-- ```transition-timing-function: (variation)```
-  - ```linear``` (default)
-  - ```ease```
-  - ```ease-in```
-- ```transition-delay: (time)```
+- `transition-property: all`
+- `transition-duration: (time in s)`
+- `transition-timing-function: (variation)`
+  - `linear` (default)
+  - `ease`
+  - `ease-in`
+- `transition-delay: (time)`
 
-Example: ```transition: all 0.5s ease-in 0.5s```;
+Example: `transition: all 0.5s ease-in 0.5s`;
 
 ### Animation
 
 - defined independently
 
-    ```css
-    @keyframes (animation_name){
-
-        /* from -> to */
-        { from { width:50px; height: 50px }
-            to { width:50px; height: 50px }
-        }
-
-        /* use percentages */
-        {
-            0% { width: 50px }
-            50% { width: 100px }
-            100% { width: 50px }
-        }
+  ```css
+  @keyframes (animation_name) {
+    /* from -> to */
+     {
+      from {
+        width: 50px;
+        height: 50px;
+      }
+      to {
+        width: 50px;
+        height: 50px;
+      }
     }
-    ```
+
+    /* use percentages */
+     {
+      0% {
+        width: 50px;
+      }
+      50% {
+        width: 100px;
+      }
+      100% {
+        width: 50px;
+      }
+    }
+  }
+  ```
 
 :::note
 :::
@@ -185,63 +205,65 @@ Example: ```transition: all 0.5s ease-in 0.5s```;
 
 - animation property
 
-    ```css
-    .box{
-        animation: grow 1s ease 0.5s 5 alternate both;
-    }
-    ```
+  ```css
+  .box {
+    animation: grow 1s ease 0.5s 5 alternate both;
+  }
+  ```
 
-- ```animation: (name) (duration) (timing-function) (delay) (iteration-count) (direction) (fill-mode)```
-  - ```animation-name```
-  - ```animation-duration```
-  - ```animation-timing-function```
-    - ```linear``` (default)
-    - ```ease```
-    - ```ease-in```
-  - ```animation-delay``` (delay after page load)
-  - ```animation-iteration-count```
-    - ```(number)```
-    - ```infinite```
-  - ```animation-direction```
-    - ```normal``` (default)
-    - ```reverse```
-    - ```alternate```
-    - ```alternate-reverse```
-  - ```animation-fill-mode```
-    - sytles we want to apply to emelent after animation is complete
-      - ```forwards```
-      - ```backwards```
-      - ```both``` (apply whatever styles are present at the end of animation)
+- `animation: (name) (duration) (timing-function) (delay) (iteration-count) (direction) (fill-mode)`
+  - `animation-name`
+  - `animation-duration`
+  - `animation-timing-function`
+    - `linear` (default)
+    - `ease`
+    - `ease-in`
+  - `animation-delay` (delay after page load)
+  - `animation-iteration-count`
+    - `(number)`
+    - `infinite`
+  - `animation-direction`
+    - `normal` (default)
+    - `reverse`
+    - `alternate`
+    - `alternate-reverse`
+  - `animation-fill-mode`
+    - styles we want to apply to element after animation is complete
+      - `forwards`
+      - `backwards`
+      - `both` (apply whatever styles are present at the end of animation)
 
 ### Transform
 
 - example
 
-    ```css
-    .box {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  ```css
+  .box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-    @keyframes transform {
-        100% {transform: scaleX(0.5) scaleY(0.5) ;}
+  @keyframes transform {
+    100% {
+      transform: scaleX(0.5) scaleY(0.5);
     }
-    ```
+  }
+  ```
 
-- ```scale (x,y)```
+- `scale (x,y)`
   - increase/decrease size
-- ```translate (x,y)```
+- `translate (x,y)`
   - move
-- ```rotate (+/-90deg)```
-- ```skew```
+- `rotate (+/-90deg)`
+- `skew`
   - rotating along an axis
 
 ### CSS prefixes
 
 - used for broswer compatibility
-- format: ```-prefix-property: ...;```
-- ```-webkit-animation: custom```
-- ```-ms-animation: custom```
-- ```-mox-animation: custom```
-- ```-o-animation:custom```
+- format: `-prefix-property: ...;`
+- `-webkit-animation: custom`
+- `-ms-animation: custom`
+- `-mox-animation: custom`
+- `-o-animation:custom`

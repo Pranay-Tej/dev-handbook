@@ -88,6 +88,28 @@ module.exports = {
         },
         {
           type: "category",
+          label: "React",
+          items: [
+            "frontend/react/react",
+            "frontend/react/react-typescript",
+            "frontend/react/react-path-alias",
+            "frontend/react/react-folder-structure",
+            "frontend/react/react-flow",
+            "frontend/react/react-components",
+            "frontend/react/react-props",
+            "frontend/react/react-state",
+            "frontend/react/react-component-communication",
+            "frontend/react/react-styling",
+            "frontend/react/react-conditional-render",
+            "frontend/react/react-lists",
+            "frontend/react/react-event-handling",
+            "frontend/react/react-http",
+            "frontend/react/react-services",
+            "frontend/react/react-env",
+          ],
+        },
+        {
+          type: "category",
           label: "Angular",
           items: [
             "frontend/angular/angular",
@@ -106,27 +128,6 @@ module.exports = {
             "frontend/angular/angular-form-handling",
             "frontend/angular/angular-ngrx",
             "frontend/angular/angular-material",
-          ],
-        },
-        {
-          type: "category",
-          label: "React",
-          items: [
-            "frontend/react/react",
-            "frontend/react/react-folder-structure",
-            "frontend/react/react-flow",
-            "frontend/react/react-components",
-            "frontend/react/react-typescript",
-            "frontend/react/react-props",
-            "frontend/react/react-state",
-            "frontend/react/react-component-communication",
-            "frontend/react/react-styling",
-            "frontend/react/react-conditional-render",
-            "frontend/react/react-lists",
-            "frontend/react/react-event-handling",
-            "frontend/react/react-http",
-            "frontend/react/react-services",
-            "frontend/react/react-env",
           ],
         },
         // {
@@ -240,6 +241,16 @@ module.exports = {
         {
           type: "doc",
           id: "git/git",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "VS Code",
+      items: [
+        {
+          type: "doc",
+          id: "vscode/vscode",
         },
       ],
     },

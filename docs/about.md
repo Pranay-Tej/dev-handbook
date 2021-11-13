@@ -36,5 +36,3 @@ Built using [Docusaurus 2](https://v2.docusaurus.io/). Deployed on [Zeit (Vercel
 ### Profiles
 
 #### [GitHub](https://github.com/Pranay-Tej)
-
-#### [GitLab](https://gitlab.com/pranay_teja)
