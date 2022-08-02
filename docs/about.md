@@ -29,7 +29,7 @@ Toggle Dark theme in the left side bar which can be accessed using the button in
 
 ### View Documentation on [GitHub](https://github.com/Pranay-Tej/dev-handbook)
 
-Built using [Docusaurus 2](https://v2.docusaurus.io/). Deployed on [Zeit (Vercel)](https://vercel.com/).
+Built using [Docusaurus 2](https://v2.docusaurus.io/). Deployed on [Vercel](https://vercel.com/).
 
 [Guide](documentation/documentation)
 

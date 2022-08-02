@@ -67,7 +67,7 @@ sidebar_label: Index
 ### Deployment
 
 - [Heroku](deployment/heroku)
-- [Vercel (Zeit)](deployment/vercel)
+- [Vercel](deployment/vercel)
 - [Firebase](deployment/firebase)
 
 ### GameDev

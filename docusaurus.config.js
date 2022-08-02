@@ -11,7 +11,7 @@ module.exports = {
   themeConfig: {
     colorMode: {
       // "light" | "dark"
-      defaultMode: "light",
+      defaultMode: "dark",
     },
     navbar: {
       title: "dev-handbook",
