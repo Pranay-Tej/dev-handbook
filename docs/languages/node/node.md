@@ -34,7 +34,7 @@ npm -v
 
 ### Windows
 
-- Download and install binary from nodejs.org
+- nvm-windows GitHub
 
 ---
 

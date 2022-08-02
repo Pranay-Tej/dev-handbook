@@ -28,9 +28,27 @@ sidebar_label: Overview
 - React Developer Tools (Browser Extension)
 - React Router
 - UI Components
+  - Mantine
   - MUI
+- Utilities
+  - Prettier
+  - Mantine hooks
+- Styling
+  - Tailwind CSS
+  - Utilities
+    - prettier-plugin-tailwindcss
+    - Tailwind CSS line clamp
+- Icons
+  - Tabler Icons React
+- Dates
+  - date-fns
 - State Management
+  - Context API
   - Zustand
+- API integration (Server state)
+  - React Query (TanStack Query)
+  - axios
+  - graphql-request
 - Forms
   - ReactHookForm
     - <a href="https://github.com/react-hook-form/react-hook-form/tree/master/examples" target="blank">Examples</a>
@@ -98,6 +116,7 @@ npm run start
 
 ## Overview
 
+- <a href="https://github.com/Pranay-Tej/intro-to-react" target="_blank">intro-to-react GitHub</a>
 - [Folder Structure](react-folder-structure)
 - [TypeScript Setup](react-typescript)
 - [Path Alias Setup](react-path-alias)
@@ -119,6 +138,7 @@ npm run start
 - Forms
   - Controlled forms
   - React Hook Form
+  - <a href="https://github.com/Pranay-Tej/react-forms" target="_blank">react-forms GitHub</a>
 - Hooks
   - Inbuilt
   - Custom
