@@ -1,6 +1,6 @@
 ---
 id: vercel
-title: Vercel (Zeit)
+title: Vercel
 sidebar_label: Overview
 ---
 
@@ -24,7 +24,7 @@ Vercel Conditions
 ## CLI
 
 - Install npm
-- Install Vercel CLI ```npm i -g vercel```
+- Install Vercel CLI `npm i -g vercel`
 - If the project is a standalone frontend app
 - Run commands from root folder
 
@@ -79,7 +79,7 @@ vercel [frontend/react-ui/user-ui/] -c -n [react-example] -t TOKEN --prod
 
 ## Angular
 
-- Change ```build``` script to production mode in ```package.json```
+- Change `build` script to production mode in `package.json`
 
 ```js
 "build": "ng build --aot --prod"
@@ -108,7 +108,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2.1.2
         with:
-          node-version: '12'
+          node-version: "12"
       - run: npx vercel ts-test/ --confirm --name=gitub-actions-trail --token=${{secrets.VERCEL_TOKEN}} --prod
 ```
 

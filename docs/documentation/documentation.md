@@ -78,15 +78,15 @@ module.exports={
   }
 ```
 
-    ```md title="Resulting Sidebar"
-    Frontend
-      |
-      +--Frontend
-      +--React
-      | +--React
-      +--Angular
-      | +--Angular
-    ```
+```md title="Resulting Sidebar"
+Frontend
+|
++--Frontend
++--React
+| +--React
++--Angular
+| +--Angular
+```
 
 - Searchbar
   - [docusaurus-lunr-search](https://github.com/lelouch77/docusaurus-lunr-search)
@@ -98,11 +98,9 @@ npm run swizzle docusaurus-lunr-search SearchBar
 
 ```js title="docusaurus.config.js"
 module.exports = {
-// ...
-plugins: [
-  'docusaurus-lunr-search'
-]
-}
+  // ...
+  plugins: ["docusaurus-lunr-search"],
+};
 ```
 
 ```bash title="project_folder"
@@ -122,10 +120,10 @@ npx http-server ./build
 
 ```js title="docusaurus.config.js"
 module.exports = {
-// ...
-themeConfig: {
+  // ...
+  themeConfig: {
     prism: {
-      additionalLanguages: ['csharp'],
+      additionalLanguages: ["csharp"],
     },
     // ...
   },
@@ -136,10 +134,10 @@ themeConfig: {
 
 ```js title="docusaurus.config.js"
 module.exports = {
-// ...
-themeConfig: {
+  // ...
+  themeConfig: {
     prism: {
-      theme: require('prism-react-renderer/themes/oceanicNext'),
+      theme: require("prism-react-renderer/themes/oceanicNext"),
     },
     // ...
   },
@@ -158,19 +156,19 @@ themeConfig: {
 
 - Use triple backtick, specify language and title for code-syntax highlighting
 
-```text
+````text
 ```js title="example.js"
-```
+````
 
 ```js title="example.js"
-console.log('test');
+console.log("test");
 ```
 
 - For normal text
 
-```text
+````text
 ```text title="example"
-```
+````
 
 - For Note highlight
 
@@ -188,19 +186,19 @@ console.log('test');
 
 ### Deployment
 
-#### Zeit
+#### Vercel
 
 - Create account
 - Connect Git repository from GitHub, GitLab or BitBucket
 
 #### Netlify
 
-  ```js title="docusaurus.config.js"
-  module.exports = {
-      url: "https://docusaurus-2.netlify.com", // url to your site with no trailing slash
-      baseUrl: "/", // base directory of your site relative to your repo
-  };
-  ```
+```js title="docusaurus.config.js"
+module.exports = {
+  url: "https://docusaurus-2.netlify.com", // url to your site with no trailing slash
+  baseUrl: "/", // base directory of your site relative to your repo
+};
+```
 
 - build command: `npm run build`
 - build directory: `build`
