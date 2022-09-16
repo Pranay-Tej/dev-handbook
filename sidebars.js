@@ -6,11 +6,11 @@ module.exports = {
     },
     {
       type: "doc",
-      id: "index",
+      id: "home",
     },
     {
       type: "category",
-      label: "Online Resources",
+      label: "Resources",
       items: [
         {
           type: "doc",

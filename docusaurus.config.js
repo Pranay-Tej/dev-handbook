@@ -37,6 +37,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/Pranay-Tej/dev-handbook/edit/master/",
         },
+        blog: false,
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
