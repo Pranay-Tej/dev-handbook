@@ -4,9 +4,18 @@ title: Resources
 sidebar_label: Resources
 ---
 
+## Free Resources
+
+- <a href="https://free-for.dev" target="_blank">FreeForDev</a>
+- <a href="https://finddev.tools" target="_blank">find dev tools</a>
+- <a href="https://freestuff.dev" target="_blank">free stuff dev</a>
+
+---
+
 ## Free Courses
 
 - <a href="https://frontendmasters.com/courses/web-development-v3" target="_blank">Frontend Masters - Complete Intro to Web Development, v3</a>
+- <a href="https://frontendmasters.com/bootcamp" target="_blank">Frontend Masters - Bootcamp</a>
 - <a href="https://frontendmasters.com/courses/algorithms" target="_blank">The Last Algorithms Course You'll Need</a>
 - Frontend masters provides access to course material and code even with free account
 - Scrimba - Hands on coding courses
@@ -114,6 +123,8 @@ sidebar_label: Resources
 ### Online IDE Editor
 
 - Gitpod
+- Codesandbox Projects
+- Stackblitz Codeflow
 - Replit
 - Goorm IDE
 - Never Install
@@ -171,6 +182,12 @@ sidebar_label: Resources
 
 - NovoResume
 - TechRez
+
+## Payment Gateway (dev modes)
+
+- Cashfree
+- Razorpay
+- Juspay
 
 ### Interview Preparation
 
