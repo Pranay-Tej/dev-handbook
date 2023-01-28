@@ -1,0 +1,18 @@
+{
+    "react": "React",
+    "react-typescript": "Typescript",
+    "react-path-alias": "Path Alias",
+    "react-folder-structure": "Folder Structure",
+    "react-flow": "Flow",
+    "react-components": "Components",
+    "react-props": "Props",
+    "react-state": "State",
+    "react-component-communication": "Component Communication",
+    "react-styling": "Styling",
+    "react-conditional-render": "Conditional Render",
+    "react-lists": "Lists",
+    "react-event-handling": "Event Handling",
+    "react-http": "HTTP",
+    "react-services": "Services",
+    "react-env": "Env"
+}

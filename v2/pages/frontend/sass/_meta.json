@@ -1,0 +1,11 @@
+{
+    "sass": "Saas",
+    "sass-variables": "Variables",
+    "sass-nesting": "Nesting",
+    "sass-import": "Import",
+    "sass-mixins": "Mixins",
+    "sass-extend": "Extend",
+    "sass-operators": "Operators",
+    "sass-conditionals": "Conditionals",
+    "sass-organize": "Organize"
+}

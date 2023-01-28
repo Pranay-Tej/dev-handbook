@@ -1,0 +1,18 @@
+{
+    "index": "Home",
+    "about": "About",
+    "resources": "Resources",
+    "vscode": "VS Code",
+    "languages": "Languages",
+    "ds": "Data Structures",
+    "algorithms": "Algorithms",
+    "git": "Git",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "db": "DataBase",
+    "linux": "Linux",
+    "deployment": "Deployment",
+    "devops": "Devops",
+    "gamedev": "Game Dev",
+    "documentation": "Documentation"
+}
