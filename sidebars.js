@@ -162,6 +162,11 @@ module.exports = {
       ],
     },
     {
+      type: "doc",
+      label: "Frontend Career Path",
+      id: "frontend-career-path/frontend-career-path"
+    },
+    {
       type: "category",
       label: "Backend",
       items: [
